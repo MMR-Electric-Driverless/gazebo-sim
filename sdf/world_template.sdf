@@ -1,0 +1,334 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <world name="sim">
+        <physics name="1ms" type="ignored">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="libignition-gazebo-physics-system.so"
+            name="ignition::gazebo::systems::Physics">
+        </plugin>
+        <plugin
+            filename="libignition-gazebo-user-commands-system.so"
+            name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="libignition-gazebo-scene-broadcaster-system.so"
+            name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+
+        <light type="directional" name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+
+        <model name="ground_plane">
+            <static>true</static>
+            <link name="link">
+                <collision name="collision">
+                <geometry>
+                    <plane>
+                    <normal>0 0 0</normal>
+                    </plane>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <plane>
+                    <normal>0 0 1</normal>
+                    <size>1000 1000</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- sensors plugin-->
+        <plugin
+        filename="libignition-gazebo-sensors-system.so"
+        name="ignition::gazebo::systems::Sensors">
+        <render_engine>ogre2</render_engine>
+        </plugin>
+            
+        <model name="vehicle_blue">
+            <pose>${vehicle_abs_pose}</pose>
+            
+            <!--lidar frame-->
+            <frame name="lidar_frame" attached_to='chassis'>
+                <pose>${lidar_pose}</pose>
+            </frame>
+
+            <link name='chassis'>
+
+                <!--lidar sensor-->
+                <sensor name='lidar' type='gpu_lidar'>
+                    <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
+                    <topic>lidar</topic>
+                    <update_rate>${lidar_hz}</update_rate>
+                    <lidar>
+                        <scan>
+                            <horizontal>
+                                <samples>${lidar_h_samples}</samples>
+                                <resolution>${lidar_h_resolution}</resolution>
+                                <min_angle>${lidar_h_min_angle}</min_angle>
+                                <max_angle>${lidar_h_max_angle}</max_angle>
+                            </horizontal>
+                            <vertical>
+                                <samples>${lidar_v_samples}</samples>
+                                <resolution>${lidar_v_resolution}</resolution>
+                                <min_angle>${lidar_v_min_angle}</min_angle>
+                                <max_angle>${lidar_v_max_angle}</max_angle>
+                            </vertical>
+                        </scan>
+                        <range>
+                            <min>${lidar_min_range}</min>
+                            <max>${lidar_max_range}</max>
+                            <resolution>${lidar_range_resolution}</resolution>
+                        </range>
+                        <noise>
+                            <type>gaussian</type>
+                            <mean>${noise_mean}</mean>
+                            <stddev>${noise_std}</stddev>
+                        </noise>
+                    </lidar>
+                    
+                    <always_on>1</always_on>
+                    <visualize>true</visualize>
+                </sensor>
+
+                <pose relative_to='__model__'>0.5 0 1 0 0 3.14</pose>
+                <inertial>
+                    <mass>1.14395</mass>
+                    <inertia>
+                        <ixx>0.126164</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.416519</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.481014</izz>
+                    </inertia>
+                </inertial>
+                <visual name='visual'>
+                    <geometry>
+                        <mesh>
+                            <scale>1 1 1</scale>
+                            <uri>../models/formula_car_with_wheels.stl</uri>
+                        </mesh>
+                    </geometry>
+                    <material>
+                        <ambient>0.0 0.0 1.0 1</ambient>
+                        <diffuse>0.0 0.0 1.0 1</diffuse>
+                        <specular>0.0 0.0 1.0 1</specular>
+                    </material>
+                </visual>
+                <collision name='collision'>
+                    <geometry>
+                        <mesh>
+                            <scale>1 1 1</scale>
+                            <uri>../models/formula_car_with_wheels.stl</uri>
+                        </mesh>
+                    <surface>
+                        <friction>
+                        <ode>
+                            <mu>1.2</mu>
+                            <mu2>1.2</mu2>
+                        </ode>
+                        </friction>
+                    </surface>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='left_wheel'>
+                <pose relative_to="chassis">1 0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <inertial>
+                    <mass>2</mass>
+                    <inertia>
+                        <ixx>0.145833</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.145833</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.125</izz>
+                    </inertia>
+                </inertial>
+                <visual name='visual'>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.2</radius>
+                            <length>0.3</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 0.0 0.0 1</ambient>
+                        <diffuse>1.0 0.0 0.0 1</diffuse>
+                        <specular>1.0 0.0 0.0 1</specular>
+                    </material>
+                </visual>
+                <collision name='collision'>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.2</radius>
+                            <length>0.3</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='right_wheel'>
+                <pose relative_to="chassis">1 -0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <inertial>
+                    <mass>2</mass>
+                    <inertia>
+                        <ixx>0.145833</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.145833</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.125</izz>
+                    </inertia>
+                </inertial>
+                <visual name='visual'>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.2</radius>
+                            <length>0.3</length>
+                        </cylinder>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 0.0 0.0 1</ambient>
+                        <diffuse>1.0 0.0 0.0 1</diffuse>
+                        <specular>1.0 0.0 0.0 1</specular>
+                    </material>
+                </visual>
+                <collision name='collision'>
+                    <geometry>
+                        <cylinder>
+                            <radius>0.2</radius>
+                            <length>0.3</length>
+                        </cylinder>
+                    </geometry>
+                </collision>
+            </link>
+
+            <joint name='left_wheel_joint' type='revolute'> <!--continous joint is not supported yet-->
+                <pose relative_to='left_wheel'/>
+                <parent>chassis</parent>
+                <child>left_wheel</child>
+                <axis>
+                    <xyz expressed_in='__model__'>0 1 0</xyz> <!--can be defined as any frame or even arbitrary frames-->
+                    <limit>
+                        <lower>-1.79769e+308</lower>    <!--negative infinity-->
+                        <upper>1.79769e+308</upper>     <!--positive infinity-->
+                    </limit>
+                </axis>
+            </joint>
+
+            <joint name='right_wheel_joint' type='revolute'> <!--continous joint is not supported yet-->
+                <pose relative_to='right_wheel'/>
+                <parent>chassis</parent>
+                <child>right_wheel</child>
+                <axis>
+                    <xyz expressed_in='__model__'>0 1 0</xyz> <!--can be defined as any frame or even arbitrary frames-->
+                    <limit>
+                        <lower>-1.79769e+308</lower>    <!--negative infinity-->
+                        <upper>1.79769e+308</upper>     <!--positive infinity-->
+                    </limit>
+                </axis>
+            </joint>
+
+            <plugin
+                filename="libignition-gazebo-diff-drive-system.so"
+                name="ignition::gazebo::systems::DiffDrive">
+                <left_joint>left_wheel_joint</left_joint>
+                <right_joint>right_wheel_joint</right_joint>
+                <wheel_separation>1.2</wheel_separation>
+                <wheel_radius>0.2</wheel_radius>
+                <topic>/cmd_vel</topic>
+            </plugin>
+
+            <plugin
+                filename="libignition-gazebo6-odometry-publisher-system"
+                name="ignition::gazebo::systems::OdometryPublisher">
+                <odom_frame>/vehicle_blue/chassis/lidar</odom_frame>
+                <dimensions>3</dimensions>
+                <odom_publish_frequency>20</odom_publish_frequency>
+            </plugin>
+
+            <!--
+            <plugin
+                filename="libignition-gazebo-pose-publisher-system.so"
+                name="ignition::gazebo::systems::PosePublisher">
+                <publish_link_pose>true</publish_link_pose> 
+                <publish_sensor_pose>true</publish_sensor_pose>
+                <publish_sim_time>true</publish_sim_time>
+                <update_frequency>20</update_frequency> 
+                <topic>/car/global_odom</topic>
+            </plugin>
+            -->
+        </model>
+
+        ${cones}
+
+
+        <!-- Moving Forward-->
+        <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+                name="ignition::gazebo::systems::TriggeredPublisher">
+            <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+                <match field="data">16777235</match>
+            </input>
+            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+                linear: {x: ${vehicle_linear_speed_f}}, angular: {z: 0.0}
+            </output>
+        </plugin>
+
+        <!-- Moving Backward-->
+        <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+                name="ignition::gazebo::systems::TriggeredPublisher">
+            <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+                <match field="data">16777237</match>
+            </input>
+            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+                linear: {x: -0.5}, angular: {z: 0.0}
+            </output>
+        </plugin>
+
+        <!-- Rotating right-->
+        <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+                name="ignition::gazebo::systems::TriggeredPublisher">
+            <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+                <match field="data">16777236</match>
+            </input>
+            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+                linear: {x: 0.0}, angular: {z: 0.5}
+            </output>
+        </plugin>
+
+        <!--Rotating left-->
+        <plugin filename="libignition-gazebo-triggered-publisher-system.so"
+                name="ignition::gazebo::systems::TriggeredPublisher">
+            <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
+                <match field="data">16777234</match>
+            </input>
+            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+                linear: {x: 0.0}, angular: {z: -0.5}
+            </output>
+        </plugin>
+
+    </world>
+</sdf>
