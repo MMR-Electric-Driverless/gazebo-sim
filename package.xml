@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>LiDAR_simulator_project</name>
+  <name>gazebo-sim</name>
   <version>0.0.0</version>
-  <description>Simulator Project for Gazebo and ROS 2</description>
+  <description>Simulator Project for lidar and other sensors with Gazebo and ROS 2</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

@@ -82,7 +82,7 @@ def generate_launch_description():
             <pose>{x} {y} 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -95,8 +95,8 @@ def generate_launch_description():
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
-                            <uri>../models/cone_440.stl</uri>
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
+                            <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
                     <material>
@@ -108,7 +108,7 @@ def generate_launch_description():
                 <collision name='collision'>
                     <geometry>
                         <mesh>
-                            <uri>../models/cone_440.stl</uri>
+                            <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
                 </collision>
@@ -199,6 +199,6 @@ def generate_launch_description():
         ignition_keypress,
         ignition_gazebo,
         ros2_bridge,
-        # rviz2,
+        rviz2,
         pointcloud2_filter
     ])

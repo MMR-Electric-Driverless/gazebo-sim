@@ -8,7 +8,6 @@ Panels:
         - /Status1
         - /PointCloud21/Topic1
         - /Odometry1
-        - /Odometry1/Status1
       Splitter Ratio: 0.5
     Tree Height: 549
   - Class: rviz_common/Selection
@@ -155,7 +154,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /car/odom
+        Value: /model/vehicle_blue/odometry
       Value: true
   Enabled: true
   Global Options:
@@ -218,10 +217,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3903980851173401
+      Pitch: 0.4453980326652527
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.208565711975098
+      Yaw: 6.108562469482422
     Saved: ~
 Window Geometry:
   Displays:
@@ -239,5 +238,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 618
+  X: 336
   Y: 117
