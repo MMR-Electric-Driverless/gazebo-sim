@@ -32,7 +32,7 @@ sudo apt-get install sudo apt-get install ros-humble-ros-gz-bridge python3-colco
 ```commandline
 pip install numpy pandas
 ```
-> i found useful installing the following packages too
+> I found useful installing the following packages too
 ```commandline
 pip install pyyaml catkin_pkg
 ```
@@ -45,7 +45,7 @@ cd ~/ros2_ws
 colcon build --packages-select gazebo-sim --symlink-install
 source install/setup.bash
 ```
-> if a virtual environment is used
+> if a virtual environment is used, export the path to the virtual environment, my was called .venv and was placed inside ~/ros2_ws alongside src, install, build and log.
 ```commandline
 export PYTHONPATH=$PYTHONPATH:~/ros2_ws/.venv/lib/python3.10/site-packages
 ```
