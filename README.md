@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Simple Lidar Simulator</h1>
+    <h1>Simple Sensor Simulator with Gazebo and Ros2</h1>
 </div>
 
 ## :open_file_folder: What's in this repo
