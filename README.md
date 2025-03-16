@@ -21,7 +21,7 @@
 - **`gazebo fortress`** [[link]](https://gazebosim.org/docs/fortress/install/)
 - **`Colcon`** [[link]](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html)
 
-> this command will install both numpy and pandas systemwise, creating a virtual environment and installing them with pip is reccomended.
+> this command will install both numpy and pandas systemwise, creating a virtual environment and installing them with pip is recommended.
 ```commandline
 sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions python3-numpy python3-pandas -y
 ```
