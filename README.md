@@ -25,7 +25,7 @@
 ```commandline
 sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions python3-numpy python3-pandas -y
 ```
-> if a virtual enviroment
+> for virtual environments use the following two commands instead
 ```commandline
 sudo apt-get install sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions
 ```
