@@ -70,7 +70,7 @@
         </plugin>
             
         <model name="vehicle_blue">
-            <pose>-2.4 0 -0.4 0 0 -0.7</pose> <!--angles are in radian-->
+            <pose>-2.4 0 -0.4 0 0 -0.7</pose> <!-- -0.4 is just to spawn the car on ground. angle in rad  -->
             
             <!--lidar frame-->
             <frame name="lidar_frame" attached_to='chassis'>
