@@ -27,7 +27,7 @@ sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions p
 ```
 > for virtual environments use the following two commands instead. Remember to use pip only inside the virtual environment!
 ```commandline
-sudo apt-get install sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions
+sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions
 ```
 ```commandline
 pip install numpy pandas
@@ -52,7 +52,7 @@ export PYTHONPATH=$PYTHONPATH:~/ros2_ws/.venv/lib/python3.10/site-packages
 
 > To move the car click on the plugins dropdown list in the top right corner of gazebo (vertical ellipsis), select the Key Publisher.
 ```commandline
-ros2 launch lidar_simulator_project simulator_launch.py
+ros2 launch gazebo-sim simulator_launch.py
 ```
 ![Screenshot from 2025-01-31 21-59-21](https://github.com/user-attachments/assets/343c7e04-40dd-4dab-8bff-37520b708268)
 

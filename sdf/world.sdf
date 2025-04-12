@@ -289,7 +289,7 @@
             <pose>-0.501839524610551 0.404460046972835 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -302,7 +302,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -332,7 +332,7 @@
             <pose>-1.321595206293269 1.869856081772146 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -345,7 +345,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -375,7 +375,7 @@
             <pose>-1.050872676349114 3.544081540125663 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -388,7 +388,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -418,7 +418,7 @@
             <pose>-0.091913913027686 4.827807863817258 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -431,7 +431,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -461,7 +461,7 @@
             <pose>1.17153820318694 5.891529484820741 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -474,7 +474,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -504,7 +504,7 @@
             <pose>2.4897293922036488 6.738434126974204 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -517,7 +517,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -547,7 +547,7 @@
             <pose>4.011951201481659 7.538322276705568 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -560,7 +560,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -590,7 +590,7 @@
             <pose>5.703362088506413 8.280806349087385 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -603,7 +603,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -633,7 +633,7 @@
             <pose>7.154893417534084 8.826482214229923 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -646,7 +646,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -676,7 +676,7 @@
             <pose>8.674568299342901 9.323452972032339 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -689,7 +689,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -719,7 +719,7 @@
             <pose>10.244547864165401 9.766400179011768 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -732,7 +732,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -762,7 +762,7 @@
             <pose>11.846993242234134 10.150005391685372 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -775,7 +775,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -805,7 +805,7 @@
             <pose>13.464065563781649 10.468950166570295 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -818,7 +818,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -848,7 +848,7 @@
             <pose>15.07792595904048 10.717916060183681 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -861,7 +861,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -891,7 +891,7 @@
             <pose>16.670735558243173 10.891584629042674 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -904,7 +904,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -934,7 +934,7 @@
             <pose>18.224655491622286 10.984637429664431 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -947,7 +947,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -977,7 +977,7 @@
             <pose>20.085190412620406 10.979485190114605 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -990,7 +990,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1020,7 +1020,7 @@
             <pose>21.82224546818126 10.829673166732313 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1033,7 +1033,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1063,7 +1063,7 @@
             <pose>23.41011242135313 10.529340110433612 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1076,7 +1076,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1106,7 +1106,7 @@
             <pose>24.858361917620847 10.090108482604162 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1119,7 +1119,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1149,7 +1149,7 @@
             <pose>26.4374334542188 9.401991763343375 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1162,7 +1162,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1192,7 +1192,7 @@
             <pose>27.872757017302675 8.56405263532743 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1205,7 +1205,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1235,7 +1235,7 @@
             <pose>29.19558778746957 7.603668299055839 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1248,7 +1248,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1278,7 +1278,7 @@
             <pose>30.437180945316534 6.54821595502813 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1291,7 +1291,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1321,7 +1321,7 @@
             <pose>31.62879167144064 5.425072803743837 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1334,7 +1334,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1364,7 +1364,7 @@
             <pose>32.80167514643894 4.261616045702469 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1377,7 +1377,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1407,7 +1407,7 @@
             <pose>33.987086550908515 3.0852228814035647 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1420,7 +1420,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1450,7 +1450,7 @@
             <pose>35.21628106544644 1.9232705113466468 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1463,7 +1463,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1493,7 +1493,7 @@
             <pose>36.52051387064975 0.803136136031234 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1506,7 +1506,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1536,7 +1536,7 @@
             <pose>37.93104014711554 -0.247803044043146 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1549,7 +1549,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1579,7 +1579,7 @@
             <pose>39.21022418183094 -1.0509769550961199 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1592,7 +1592,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1622,7 +1622,7 @@
             <pose>40.60301560244245 -1.771243415114254 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1635,7 +1635,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1665,7 +1665,7 @@
             <pose>42.123545319236385 -2.395179536394365 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1678,7 +1678,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1708,7 +1708,7 @@
             <pose>43.754646026154006 -2.9285088202974507 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1721,7 +1721,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1751,7 +1751,7 @@
             <pose>45.46427523637484 -3.3860545199123058 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1764,7 +1764,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1794,7 +1794,7 @@
             <pose>47.22030010249203 -3.782695165565446 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1807,7 +1807,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1837,7 +1837,7 @@
             <pose>48.99058777709864 -4.13330928758337 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1850,7 +1850,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1880,7 +1880,7 @@
             <pose>50.74300541278778 -4.4527754162925905 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1893,7 +1893,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1923,7 +1923,7 @@
             <pose>52.44542016215256 -4.755972082019614 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1936,7 +1936,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -1966,7 +1966,7 @@
             <pose>54.06569917778606 -5.057777815090945 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -1979,7 +1979,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2009,7 +2009,7 @@
             <pose>55.57170961228139 -5.373071145833092 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2022,7 +2022,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2052,7 +2052,7 @@
             <pose>57.18284455742446 -5.790175742348863 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2065,7 +2065,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2095,7 +2095,7 @@
             <pose>58.72197446925063 -6.362724096485099 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2108,7 +2108,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2138,7 +2138,7 @@
             <pose>60.02626989545873 -7.297675934022811 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2151,7 +2151,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2181,7 +2181,7 @@
             <pose>60.34456406680583 -8.85705027419842 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2194,7 +2194,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2224,7 +2224,7 @@
             <pose>59.668864798298536 -10.280041291408226 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2237,7 +2237,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2267,7 +2267,7 @@
             <pose>58.559149127004446 -11.65900997355598 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2280,7 +2280,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2310,7 +2310,7 @@
             <pose>57.294075532158644 -12.897604412700154 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2323,7 +2323,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2353,7 +2353,7 @@
             <pose>56.06158917118052 -13.943816752823619 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2366,7 +2366,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2396,7 +2396,7 @@
             <pose>54.70185656634292 -14.981893044283126 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2409,7 +2409,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2439,7 +2439,7 @@
             <pose>53.247509107158194 -15.992231047561331 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2452,7 +2452,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2482,7 +2482,7 @@
             <pose>51.73117818313876 -16.9552285231409 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2495,7 +2495,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2525,7 +2525,7 @@
             <pose>50.18549518379692 -17.851283231504503 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2538,7 +2538,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2568,7 +2568,7 @@
             <pose>48.64309149864512 -18.660792933134807 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2581,7 +2581,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2611,7 +2611,7 @@
             <pose>47.13072201594224 -19.36812468905719 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2624,7 +2624,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2654,7 +2654,7 @@
             <pose>45.650742295588586 -19.9741261604226 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2667,7 +2667,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2697,7 +2697,7 @@
             <pose>44.19917631211612 -20.48392169686632 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2710,7 +2710,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2740,7 +2740,7 @@
             <pose>42.48920500426688 -20.97589960193798 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2753,7 +2753,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2783,7 +2783,7 @@
             <pose>40.80755339170423 -21.345574925453047 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2796,7 +2796,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2826,7 +2826,7 @@
             <pose>39.14735088216143 -21.60180255726457 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2839,7 +2839,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2869,7 +2869,7 @@
             <pose>37.501726883371774 -21.75343738722564 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2882,7 +2882,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2912,7 +2912,7 @@
             <pose>35.86381080306849 -21.80933430518932 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2925,7 +2925,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2955,7 +2955,7 @@
             <pose>34.22673204898486 -21.778348201008683 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -2968,7 +2968,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -2998,7 +2998,7 @@
             <pose>32.58362002885417 -21.669333964536808 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3011,7 +3011,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3041,7 +3041,7 @@
             <pose>30.927604150409667 -21.491146485626757 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3054,7 +3054,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3084,7 +3084,7 @@
             <pose>29.251813821384637 -21.252640654131604 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3097,7 +3097,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3127,7 +3127,7 @@
             <pose>27.550173132553923 -20.96211419344927 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3140,7 +3140,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3170,7 +3170,7 @@
             <pose>25.827224494790407 -20.620420133358962 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3183,7 +3183,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3213,7 +3213,7 @@
             <pose>24.0950787814773 -20.223105119575926 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3226,7 +3226,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3256,7 +3256,7 @@
             <pose>22.366009571439967 -19.76560172212773 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3269,7 +3269,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3299,7 +3299,7 @@
             <pose>20.65229044350376 -19.243342511041966 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3312,7 +3312,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3342,7 +3342,7 @@
             <pose>18.96619497649403 -18.651760056346205 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3355,7 +3355,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3385,7 +3385,7 @@
             <pose>17.319996749236154 -17.98628692806802 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3398,7 +3398,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3428,7 +3428,7 @@
             <pose>15.725969340555503 -17.242355696235016 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3441,7 +3441,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3471,7 +3471,7 @@
             <pose>14.19638632927743 -16.41539893087476 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3484,7 +3484,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3514,7 +3514,7 @@
             <pose>12.743521294227293 -15.500849202014827 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3527,7 +3527,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3557,7 +3557,7 @@
             <pose>11.379647814230458 -14.4941390796828 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3570,7 +3570,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3600,7 +3600,7 @@
             <pose>10.117039468112301 -13.390701133906276 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3613,7 +3613,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3643,7 +3643,7 @@
             <pose>8.967969834698161 -12.18596793471281 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3656,7 +3656,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3686,7 +3686,7 @@
             <pose>7.944440960515461 -10.875549781513982 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3699,7 +3699,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3729,7 +3729,7 @@
             <pose>7.036492652361684 -9.469432189368277 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3742,7 +3742,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3772,7 +3772,7 @@
             <pose>6.196387090139864 -8.002327729404733 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3785,7 +3785,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3815,7 +3815,7 @@
             <pose>5.372657115905081 -6.511389982250673 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3828,7 +3828,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3858,7 +3858,7 @@
             <pose>4.513835571712422 -5.033772528533428 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3871,7 +3871,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3901,7 +3901,7 @@
             <pose>3.568455299616965 -3.606628948880319 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3914,7 +3914,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3944,7 +3944,7 @@
             <pose>2.485049141673798 -2.267112823918677 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -3957,7 +3957,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -3987,7 +3987,7 @@
             <pose>1.2128167555790779 -1.052204164906874 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4000,7 +4000,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4030,7 +4030,7 @@
             <pose>-0.12724071870976 0.045836236162932996 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4043,7 +4043,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4073,7 +4073,7 @@
             <pose>-2.7326610899534858 -1.6013901826307853 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4086,7 +4086,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4116,7 +4116,7 @@
             <pose>-3.720584289660846 -0.22756313963876562 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4129,7 +4129,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4159,7 +4159,7 @@
             <pose>-4.2857805333479195 1.4076814969301017 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4172,7 +4172,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4202,7 +4202,7 @@
             <pose>-4.30535285337218 3.1064907441268867 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4215,7 +4215,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4245,7 +4245,7 @@
             <pose>-3.856493829765818 4.625940584928528 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4258,7 +4258,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4288,7 +4288,7 @@
             <pose>-2.89758214640646 6.181642048234691 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4301,7 +4301,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4331,7 +4331,7 @@
             <pose>-1.6755237462170356 7.455904888819848 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4344,7 +4344,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4374,7 +4374,7 @@
             <pose>-0.2546839513675381 8.55512988995229 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4387,7 +4387,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4417,7 +4417,7 @@
             <pose>1.342119524744676 9.536033822277975 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4430,7 +4430,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4460,7 +4460,7 @@
             <pose>2.7340505224103575 10.25253852719651 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4473,7 +4473,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4503,7 +4503,7 @@
             <pose>4.2161995167793735 10.913583246317454 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4516,7 +4516,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4546,7 +4546,7 @@
             <pose>5.776396036670017 11.519818692922463 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4559,7 +4559,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4589,7 +4589,7 @@
             <pose>7.401395416862833 12.069680242015654 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4602,7 +4602,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4632,7 +4632,7 @@
             <pose>9.077247858498804 12.560235963151072 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4645,7 +4645,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4675,7 +4675,7 @@
             <pose>10.789623586237056 12.987650302223212 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4688,7 +4688,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4718,7 +4718,7 @@
             <pose>12.524099912580297 13.347422415377824 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4731,7 +4731,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4761,7 +4761,7 @@
             <pose>14.266435669399232 13.634473465121127 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4774,7 +4774,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4804,7 +4804,7 @@
             <pose>16.002862616465737 13.843104875388857 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4817,7 +4817,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4847,7 +4847,7 @@
             <pose>17.720422892564706 13.966806850622884 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4860,7 +4860,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4890,7 +4890,7 @@
             <pose>19.407373507453457 13.997845930450703 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4903,7 +4903,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4933,7 +4933,7 @@
             <pose>21.053644472626175 13.926484567893873 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4946,7 +4946,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -4976,7 +4976,7 @@
             <pose>22.64816158447624 13.740140984563936 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -4989,7 +4989,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5019,7 +5019,7 @@
             <pose>24.157568887396003 13.43473317013667 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5032,7 +5032,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5062,7 +5062,7 @@
             <pose>25.913410598802333 12.898466059611977 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5075,7 +5075,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5105,7 +5105,7 @@
             <pose>27.523774893134956 12.212574790876198 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5118,7 +5118,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5148,7 +5148,7 @@
             <pose>28.992276656199778 11.40610665115323 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5161,7 +5161,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5191,7 +5191,7 @@
             <pose>30.328905856955274 10.510388325460376 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5204,7 +5204,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5234,7 +5234,7 @@
             <pose>31.549884418955205 9.555339005273094 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5247,7 +5247,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5277,7 +5277,7 @@
             <pose>32.891118648073196 8.3677710937792 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5290,7 +5290,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5320,7 +5320,7 @@
             <pose>34.13274766620763 7.170527529065531 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5333,7 +5333,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5363,7 +5363,7 @@
             <pose>35.31120348286073 5.994876931982215 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5376,7 +5376,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5406,7 +5406,7 @@
             <pose>36.45980979923484 4.866948849398553 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5419,7 +5419,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5449,7 +5449,7 @@
             <pose>37.608918903337894 3.808372516289301 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5462,7 +5462,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5492,7 +5492,7 @@
             <pose>38.78766299847585 2.8360022629657125 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5505,7 +5505,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5535,7 +5535,7 @@
             <pose>40.02704341003546 1.9617196177467162 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5548,7 +5548,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5578,7 +5578,7 @@
             <pose>41.36354145449291 1.1937661029862663 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5591,7 +5591,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5621,7 +5621,7 @@
             <pose>42.85769219440993 0.5328419995153557 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5634,7 +5634,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5664,7 +5664,7 @@
             <pose>44.28369529134818 0.04493615350471636 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5677,7 +5677,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5707,7 +5707,7 @@
             <pose>45.84121755510962 -0.38846961195139773 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5720,7 +5720,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5750,7 +5750,7 @@
             <pose>47.491120756893 -0.7731802468410889 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5763,7 +5763,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5793,7 +5793,7 @@
             <pose>49.19659337360001 -1.118820248498929 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5806,7 +5806,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5836,7 +5836,7 @@
             <pose>50.923359263887356 -1.437465298543776 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5849,7 +5849,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5879,7 +5879,7 @@
             <pose>52.63991211563324 -1.7430060767199462 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5892,7 +5892,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5922,7 +5922,7 @@
             <pose>54.31814950576881 -2.05115094226978 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5935,7 +5935,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -5965,7 +5965,7 @@
             <pose>55.934789132229504 -2.3802831710327377 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -5978,7 +5978,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6008,7 +6008,7 @@
             <pose>57.474164657962426 -2.754067943019051 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6021,7 +6021,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6051,7 +6051,7 @@
             <pose>58.93314615452268 -3.2085375463969354 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6064,7 +6064,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6094,7 +6094,7 @@
             <pose>60.32672530759359 -3.8114328999306397 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6107,7 +6107,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6137,7 +6137,7 @@
             <pose>61.67333932132657 -4.709332714959701 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6150,7 +6150,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6180,7 +6180,7 @@
             <pose>62.858105841823985 -6.160327425694543 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6193,7 +6193,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6223,7 +6223,7 @@
             <pose>63.37070622706809 -7.750549892429087 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6236,7 +6236,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6266,7 +6266,7 @@
             <pose>63.31571727007568 -9.304083827055072 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6279,7 +6279,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6309,7 +6309,7 @@
             <pose>62.77296964809597 -10.89254521987307 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6322,7 +6322,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6352,7 +6352,7 @@
             <pose>61.96175698937492 -12.238147965516863 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6365,7 +6365,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6395,7 +6395,7 @@
             <pose>60.96096805209238 -13.477331415510678 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6408,7 +6408,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6438,7 +6438,7 @@
             <pose>59.7961367348354 -14.669673584957348 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6451,7 +6451,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6481,7 +6481,7 @@
             <pose>58.487256332737374 -15.834013072023144 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6494,7 +6494,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6524,7 +6524,7 @@
             <pose>57.05665348771467 -16.970599655617146 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6537,7 +6537,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6567,7 +6567,7 @@
             <pose>55.841119367622255 -17.854364485061986 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6580,7 +6580,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6610,7 +6610,7 @@
             <pose>54.57691027097998 -18.708602924990966 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6623,7 +6623,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6653,7 +6653,7 @@
             <pose>53.27769800857459 -19.525885332116754 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6666,7 +6666,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6696,7 +6696,7 @@
             <pose>51.95710519361881 -20.298188805442646 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6709,7 +6709,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6739,7 +6739,7 @@
             <pose>50.62834827036202 -21.017143527472836 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6752,7 +6752,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6782,7 +6782,7 @@
             <pose>48.97623148764328 -21.827252811908842 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6795,7 +6795,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6825,7 +6825,7 @@
             <pose>47.34775627558108 -22.531188038743323 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6838,7 +6838,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6868,7 +6868,7 @@
             <pose>45.74104535723275 -23.131983657321502 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6881,7 +6881,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6911,7 +6911,7 @@
             <pose>44.153987021845985 -23.6332742531607 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6924,7 +6924,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6954,7 +6954,7 @@
             <pose>42.585027957972905 -24.038960844500348 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -6967,7 +6967,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -6997,7 +6997,7 @@
             <pose>41.03304602380727 -24.35336536617624 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7010,7 +7010,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7040,7 +7040,7 @@
             <pose>39.497151489188255 -24.5813393560512 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7053,7 +7053,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7083,7 +7083,7 @@
             <pose>37.976448331881606 -24.72829991647715 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7096,7 +7096,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7126,7 +7126,7 @@
             <pose>36.4697994244833 -24.80018387303524 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7139,7 +7139,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7169,7 +7169,7 @@
             <pose>34.678128110870794 -24.79629119445277 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7182,7 +7182,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7212,7 +7212,7 @@
             <pose>32.90065571986617 -24.70482950857038 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7225,7 +7225,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7255,7 +7255,7 @@
             <pose>31.132435292785832 -24.537308560433768 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7268,7 +7268,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7298,7 +7298,7 @@
             <pose>29.36743908263895 -24.30502132711903 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7311,7 +7311,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7341,7 +7341,7 @@
             <pose>27.596802197616114 -24.018409057637772 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7354,7 +7354,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7384,7 +7384,7 @@
             <pose>26.100572489951723 -23.73933690732711 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7397,7 +7397,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7427,7 +7427,7 @@
             <pose>24.587634672988106 -23.42029411918107 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7440,7 +7440,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7470,7 +7470,7 @@
             <pose>23.06458162880117 -23.0580067297323 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7483,7 +7483,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7513,7 +7513,7 @@
             <pose>21.53796470019823 -22.649061742868483 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7526,7 +7526,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7556,7 +7556,7 @@
             <pose>20.014309976374072 -22.18987789917322 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7569,7 +7569,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7599,7 +7599,7 @@
             <pose>18.50014436327252 -21.676672875395024 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7612,7 +7612,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7642,7 +7642,7 @@
             <pose>17.002036079887883 -21.105428679591807 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7655,7 +7655,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7685,7 +7685,7 @@
             <pose>15.526655351791092 -20.47185909102628 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7698,7 +7698,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7728,7 +7728,7 @@
             <pose>14.08086185308579 -19.771386328218497 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7741,7 +7741,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7771,7 +7771,7 @@
             <pose>12.671825039664801 -18.99913902504342 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7784,7 +7784,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7814,7 +7814,7 @@
             <pose>11.307180446196618 -18.149989971844864 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7827,7 +7827,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7857,7 +7857,7 @@
             <pose>9.99521711920426 -17.218658799225018 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7870,7 +7870,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7900,7 +7900,7 @@
             <pose>8.745076269506614 -16.19990863821311 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7913,7 +7913,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7943,7 +7943,7 @@
             <pose>7.5669181371790355 -15.088860567844117 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7956,7 +7956,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -7986,7 +7986,7 @@
             <pose>6.471987191537794 -13.881426714198017 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -7999,7 +7999,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8029,7 +8029,7 @@
             <pose>5.477861887125542 -12.583176109114646 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8042,7 +8042,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8072,7 +8072,7 @@
             <pose>4.6162010128357975 -11.264058147788093 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8085,7 +8085,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8115,7 +8115,7 @@
             <pose>3.8555951700548876 -9.963532604159585 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8128,7 +8128,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8158,7 +8158,7 @@
             <pose>3.023415807209485 -8.460775560418401 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8171,7 +8171,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8201,7 +8201,7 @@
             <pose>2.2281962660266825 -7.055122535401337 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8214,7 +8214,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8244,7 +8244,7 @@
             <pose>1.4270721634988632 -5.778124674248378 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8257,7 +8257,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8287,7 +8287,7 @@
             <pose>0.43877525494253655 -4.479856834959731 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8300,7 +8300,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8330,7 +8330,7 @@
             <pose>-0.6888064766201856 -3.372512136439969 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8343,7 +8343,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
@@ -8373,7 +8373,7 @@
             <pose>-1.8808143400401645 -2.4036858732848754 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
-                    <mass>0.14395</mass>
+                    <mass>0.45</mass>
                     <inertia>
                         <ixx>0.5</ixx>
                         <ixy>0</ixy>
@@ -8386,7 +8386,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <scale>1 1 1</scale><!-- height scale: 1 = 440mm -->
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
                             <uri>../models/cone_325_no_color.stl</uri>
                         </mesh>
                     </geometry>
