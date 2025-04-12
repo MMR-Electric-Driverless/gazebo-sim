@@ -64,26 +64,30 @@ class PointCloudFilter:
         # Step 3: Data filtering
         filter_data_start = time.time()
         filtered_data = point_cloud_data[selected_rows, :, :]
+
+        # Step 4: Reducing accuracy to improve performance
+        filtered_data = filtered_data.astype(np.float32)
         new_height = filtered_data.shape[0]
+        new_width = filtered_data.shape[1]
+
         filter_data_duration = time.time() - filter_data_start
 
-        # Step 4: Publishing
+        # Step 5: Publishing
         publish_start = time.time()
         filtered_msg = PointCloud2()
         filtered_msg.header = msg.header
         filtered_msg.height = new_height
-        filtered_msg.width = msg.width
+        filtered_msg.width = new_width
         filtered_msg.fields = msg.fields.copy() if hasattr(msg, 'fields') else []
         filtered_msg.is_bigendian = msg.is_bigendian
         filtered_msg.point_step = msg.point_step
-        filtered_msg.row_step = msg.row_step * (msg.height // new_height) if new_height != 0 else 0
+        filtered_msg.row_step = filtered_msg.width * filtered_msg.point_step
         filtered_msg.is_dense = msg.is_dense
 
-        filtered_data = filtered_data.astype(np.float16)
-        filtered_msg.data = filtered_data.tobytes()
-        #filtered_msg.data = filtered_data.reshape(-1).tobytes()
-        constuction_duration = time.time() - publish_start
-
+        '''!!!Bottleneck Line!!!'''
+        filtered_msg.data = filtered_data.tobytes() 
+        '''!!!Bottleneck Line!!!'''
+        
         self.publisher.publish(filtered_msg)
         publish_duration = time.time() - publish_start
 
@@ -95,7 +99,6 @@ class PointCloudFilter:
         self.node.get_logger().info(f"PointCloud conversion: {point_cloud_data_duration:.4f}s")
         self.node.get_logger().info(f"Vertical filter duration: {vertical_filter_duration:.4f}s")
         self.node.get_logger().info(f"Filtering data duration: {filter_data_duration:.4f}s")
-        self.node.get_logger().info(f"Constuction duration: {constuction_duration:.4f}s")
         self.node.get_logger().info(f"Publishing duration: {publish_duration:.4f}s")
 
 
