@@ -157,7 +157,7 @@
             <link name='left_wheel'>
                 <pose relative_to="chassis">1 0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
-                    <mass>2</mass>
+                    <mass>20</mass>
                     <inertia>
                         <ixx>0.145833</ixx>
                         <ixy>0</ixy>
@@ -193,7 +193,7 @@
             <link name='right_wheel'>
                 <pose relative_to="chassis">1 -0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
-                    <mass>2</mass>
+                    <mass>20</mass>
                     <inertia>
                         <ixx>0.145833</ixx>
                         <ixy>0</ixy>
