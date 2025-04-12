@@ -1,0 +1,9 @@
+pure_pursuit:
+  ros__parameters:
+    target_speed: 5.0
+    lookahead_distance: 2.0
+    max_steering_angle: 0.523599
+    wheelbase_length: 2.5
+    waypoints_topic: "/waypoints"
+    vehicle_state_topic: "/vehicle_state"
+    control_topic: "/cmd_vel"
