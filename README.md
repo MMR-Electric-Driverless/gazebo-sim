@@ -54,6 +54,12 @@ export PYTHONPATH=$PYTHONPATH:~/ros2_ws/.venv/lib/python3.10/site-packages
 ```commandline
 ros2 launch gazebo-sim simulator_launch.py
 ```
+
+> A bridge between ros2 and gazebo to control the car is present and can be use instead of the Key Publisher.
+```
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: .5}, angular: {z: 0.5}}"
+```
+
 ![Screenshot from 2025-01-31 21-59-21](https://github.com/user-attachments/assets/343c7e04-40dd-4dab-8bff-37520b708268)
 
 ![scatter plot race track](https://github.com/user-attachments/assets/1a83dcf5-76ab-4309-8b8f-71cec086830f)

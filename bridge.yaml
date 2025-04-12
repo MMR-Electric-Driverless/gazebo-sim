@@ -9,4 +9,7 @@
   gz_type_name: "ignition.msgs.Odometry"
 - topic_name: "/keyboard/keypress"
   ros_type_name: "std_msgs/msg/Int32"
-  gz_type_name: "gz.msgs.Int32"
+  gz_type_name: "ignition.msgs.Int32"
+- topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
