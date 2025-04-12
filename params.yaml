@@ -6,7 +6,7 @@ filter:
         ]
 vehicle:
   abs_pose: [-2.4, 0, 0, 0, 0, -0.7]  #absolute position and rotation
-  linear_speed_f: 0.5
+  linear_speed_f: 5
 lidar:
   pose: [0.26, 0, 0.475, 0, -0.1570796, 0]  #lidar position and rotation relative to the car
   hz: 20
