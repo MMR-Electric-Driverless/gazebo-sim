@@ -4,7 +4,7 @@ import yaml
 import time
 import os
 import struct
-from sensor_msgs.msg import PointCloud2
+from sensor_msgs.msg import PointCloud2, PointField
 from rclpy.executors import MultiThreadedExecutor
 
 
@@ -79,6 +79,7 @@ class PointCloudFilter:
         filtered_msg.height = new_height
         filtered_msg.width = new_width
         filtered_msg.fields = msg.fields.copy() if hasattr(msg, 'fields') else []
+        filtered_msg.fields.append(PointField(name='t', offset=0, datatype=PointField.FLOAT32, count=1))
         filtered_msg.is_bigendian = msg.is_bigendian
         filtered_msg.point_step = msg.point_step
         filtered_msg.row_step = filtered_msg.width * filtered_msg.point_step
