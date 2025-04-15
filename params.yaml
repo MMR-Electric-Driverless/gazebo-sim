@@ -5,7 +5,7 @@ filter:
             {'start': 0.75, 'end': 1.0, 'downsample': 4},  # Lower 25%, keep 1/4
         ]
 vehicle:
-  abs_pose: [-2.4, 0, -0.4, 0, 0, -0.7]  #absolute position and rotation
+  abs_pose: [17.4, 12.3, -0.4, 0, 0, 0]  #absolute position and rotation
   linear_speed_f: 5
 lidar:
   pose: [0.26, 0, 0.475, 0, -0.1570796, 0]  #lidar position and rotation relative to the car

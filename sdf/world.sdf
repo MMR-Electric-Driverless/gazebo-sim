@@ -70,7 +70,7 @@
         </plugin>
             
         <model name="vehicle_blue">
-            <pose>-2.4 0 -0.4 0 0 -0.7</pose> <!-- -0.4 is just to spawn the car on ground. angle in rad  -->
+            <pose>0 0 -0.4 0.0 0.0 0.0</pose>
             
             <!--lidar frame-->
             <frame name="lidar_frame" attached_to='chassis'>
@@ -123,7 +123,7 @@
                     <topic>imu</topic>
                 </sensor>
 
-                <pose relative_to='__model__'>0.5 0 1 0 0 3.14</pose>
+                <pose relative_to='__model__'>0.5 0 1 0 0 0</pose>
                 <inertial>
                     <mass>100.14395</mass>
                     <inertia>
@@ -317,6 +317,8 @@
                 filename="libignition-gazebo6-odometry-publisher-system"
                 name="ignition::gazebo::systems::OdometryPublisher">
                 <odom_frame>/vehicle_blue/chassis/lidar</odom_frame>
+                <robot_base_frame>'__model__'</robot_base_frame>
+                <rpy_offset>0 0 3.14</rpy_offset>
                 <dimensions>3</dimensions>
                 <odom_publish_frequency>20</odom_publish_frequency>
             </plugin>
@@ -326,7 +328,7 @@
         
         <model name='cone_0'>
             <static>true</static>
-            <pose>-0.501839524610551 0.404460046972835 0 0 0 0</pose>
+            <pose>-4.181472208659434 -28.115713603256516 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -369,7 +371,7 @@
     
         <model name='cone_1'>
             <static>true</static>
-            <pose>-1.321595206293269 1.869856081772146 0 0 0 0</pose>
+            <pose>-5.5763732713212955 -27.140231104301016 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -412,7 +414,7 @@
     
         <model name='cone_2'>
             <static>true</static>
-            <pose>-1.050872676349114 3.544081540125663 0 0 0 0</pose>
+            <pose>-6.87410039304628 -26.069543258558472 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -455,7 +457,7 @@
     
         <model name='cone_3'>
             <static>true</static>
-            <pose>-0.091913913027686 4.827807863817258 0 0 0 0</pose>
+            <pose>-8.062379995009014 -24.89908263605649 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -498,7 +500,7 @@
     
         <model name='cone_4'>
             <static>true</static>
-            <pose>1.17153820318694 5.891529484820741 0 0 0 0</pose>
+            <pose>-9.128938498384155 -23.624281806822612 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -541,7 +543,7 @@
     
         <model name='cone_5'>
             <static>true</static>
-            <pose>2.4897293922036488 6.738434126974204 0 0 0 0</pose>
+            <pose>-10.070937582515045 -22.246749116785608 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -584,7 +586,7 @@
     
         <model name='cone_6'>
             <static>true</static>
-            <pose>4.011951201481659 7.538322276705568 0 0 0 0</pose>
+            <pose>-10.927938820275859 -20.795845437136084 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -627,7 +629,7 @@
     
         <model name='cone_7'>
             <static>true</static>
-            <pose>5.703362088506413 8.280806349087385 0 0 0 0</pose>
+            <pose>-11.751408750734665 -19.308723943420272 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -670,7 +672,7 @@
     
         <model name='cone_8'>
             <static>true</static>
-            <pose>7.154893417534084 8.826482214229923 0 0 0 0</pose>
+            <pose>-12.592814531836376 -17.822538216265496 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -713,7 +715,7 @@
     
         <model name='cone_9'>
             <static>true</static>
-            <pose>8.674568299342901 9.323452972032339 0 0 0 0</pose>
+            <pose>-13.503623321525907 -16.374441836299084 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -756,7 +758,7 @@
     
         <model name='cone_10'>
             <static>true</static>
-            <pose>10.244547864165401 9.766400179011768 0 0 0 0</pose>
+            <pose>-14.535302277748182 -15.001588384148361 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -799,7 +801,7 @@
     
         <model name='cone_11'>
             <static>true</static>
-            <pose>11.846993242234134 10.150005391685372 0 0 0 0</pose>
+            <pose>-15.7393185584481 -13.741131440440666 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -842,7 +844,7 @@
     
         <model name='cone_12'>
             <static>true</static>
-            <pose>13.464065563781649 10.468950166570295 0 0 0 0</pose>
+            <pose>-17.10234883640708 -12.61335988897849 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -885,7 +887,7 @@
     
         <model name='cone_13'>
             <static>true</static>
-            <pose>15.07792595904048 10.717916060183681 0 0 0 0</pose>
+            <pose>-18.208704938516075 -11.533696115235749 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -928,7 +930,7 @@
     
         <model name='cone_14'>
             <static>true</static>
-            <pose>16.670735558243173 10.891584629042674 0 0 0 0</pose>
+            <pose>-18.764089499975643 -10.058502309465192 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -971,7 +973,7 @@
     
         <model name='cone_15'>
             <static>true</static>
-            <pose>18.224655491622286 10.984637429664431 0 0 0 0</pose>
+            <pose>-18.351183929379907 -8.570709637223901 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1014,7 +1016,7 @@
     
         <model name='cone_16'>
             <static>true</static>
-            <pose>20.085190412620406 10.979485190114605 0 0 0 0</pose>
+            <pose>-17.3077808230539 -7.292004064827377 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1057,7 +1059,7 @@
     
         <model name='cone_17'>
             <static>true</static>
-            <pose>21.82224546818126 10.829673166732313 0 0 0 0</pose>
+            <pose>-15.982818402671322 -6.235826871431316 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1100,7 +1102,7 @@
     
         <model name='cone_18'>
             <static>true</static>
-            <pose>23.41011242135313 10.529340110433612 0 0 0 0</pose>
+            <pose>-14.621033766201187 -5.397494520968078 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1143,7 +1145,7 @@
     
         <model name='cone_19'>
             <static>true</static>
-            <pose>24.858361917620847 10.090108482604162 0 0 0 0</pose>
+            <pose>-13.06218681797266 -4.608256179912427 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1186,7 +1188,7 @@
     
         <model name='cone_20'>
             <static>true</static>
-            <pose>26.4374334542188 9.401991763343375 0 0 0 0</pose>
+            <pose>-11.341119100500306 -3.87849943319181 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1229,7 +1231,7 @@
     
         <model name='cone_21'>
             <static>true</static>
-            <pose>27.872757017302675 8.56405263532743 0 0 0 0</pose>
+            <pose>-9.870879489236653 -3.344501240807788 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1272,7 +1274,7 @@
     
         <model name='cone_22'>
             <static>true</static>
-            <pose>29.19558778746957 7.603668299055839 0 0 0 0</pose>
+            <pose>-8.336956042633714 -2.8605377666346 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1315,7 +1317,7 @@
     
         <model name='cone_23'>
             <static>true</static>
-            <pose>30.437180945316534 6.54821595502813 0 0 0 0</pose>
+            <pose>-6.757187630458958 -2.4319274541551095 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1358,7 +1360,7 @@
     
         <model name='cone_24'>
             <static>true</static>
-            <pose>31.62879167144064 5.425072803743837 0 0 0 0</pose>
+            <pose>-5.149413122479829 -2.0639887468521567 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1401,7 +1403,7 @@
     
         <model name='cone_25'>
             <static>true</static>
-            <pose>32.80167514643894 4.261616045702469 0 0 0 0</pose>
+            <pose>-3.531471388463787 -1.762040088208603 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1444,7 +1446,7 @@
     
         <model name='cone_26'>
             <static>true</static>
-            <pose>33.987086550908515 3.0852228814035647 0 0 0 0</pose>
+            <pose>-1.9212012981782856 -1.5313999217072949 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1487,7 +1489,7 @@
     
         <model name='cone_27'>
             <static>true</static>
-            <pose>35.21628106544644 1.9232705113466468 0 0 0 0</pose>
+            <pose>-0.33644172139079 -1.377386690831095 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1530,7 +1532,7 @@
     
         <model name='cone_28'>
             <static>true</static>
-            <pose>36.52051387064975 0.803136136031234 0 0 0 0</pose>
+            <pose>1.2049684721312581 -1.3053188390628434 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1573,7 +1575,7 @@
     
         <model name='cone_29'>
             <static>true</static>
-            <pose>37.93104014711554 -0.247803044043146 0 0 0 0</pose>
+            <pose>3.0435947406554265 -1.338572029966496 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1616,7 +1618,7 @@
     
         <model name='cone_30'>
             <static>true</static>
-            <pose>39.21022418183094 -1.0509769550961199 0 0 0 0</pose>
+            <pose>4.751856454828998 -1.518521081013311 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1659,7 +1661,7 @@
     
         <model name='cone_31'>
             <static>true</static>
-            <pose>40.60301560244245 -1.771243415114254 0 0 0 0</pose>
+            <pose>6.3103529175183315 -1.8479013146042567 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1702,7 +1704,7 @@
     
         <model name='cone_32'>
             <static>true</static>
-            <pose>42.123545319236385 -2.395179536394365 0 0 0 0</pose>
+            <pose>8.002620425679572 -2.4209268721951895 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1745,7 +1747,7 @@
     
         <model name='cone_33'>
             <static>true</static>
-            <pose>43.754646026154006 -2.9285088202974507 0 0 0 0</pose>
+            <pose>9.530303173262048 -3.162026305540974 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1788,7 +1790,7 @@
     
         <model name='cone_34'>
             <static>true</static>
-            <pose>45.46427523637484 -3.3860545199123058 0 0 0 0</pose>
+            <pose>10.92465634086281 -4.043822414142082 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1831,7 +1833,7 @@
     
         <model name='cone_35'>
             <static>true</static>
-            <pose>47.22030010249203 -3.782695165565446 0 0 0 0</pose>
+            <pose>12.216935109078939 -5.038937997498991 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1874,7 +1876,7 @@
     
         <model name='cone_36'>
             <static>true</static>
-            <pose>48.99058777709864 -4.13330928758337 0 0 0 0</pose>
+            <pose>13.4383946585075 -6.119995855112173 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1917,7 +1919,7 @@
     
         <model name='cone_37'>
             <static>true</static>
-            <pose>50.74300541278778 -4.4527754162925905 0 0 0 0</pose>
+            <pose>14.620290169745553 -7.259618786482108 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -1960,7 +1962,7 @@
     
         <model name='cone_38'>
             <static>true</static>
-            <pose>52.44542016215256 -4.755972082019614 0 0 0 0</pose>
+            <pose>15.793876823390164 -8.430429591109265 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2003,7 +2005,7 @@
     
         <model name='cone_39'>
             <static>true</static>
-            <pose>54.06569917778606 -5.057777815090945 0 0 0 0</pose>
+            <pose>16.990409800038403 -9.60505106849412 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2046,7 +2048,7 @@
     
         <model name='cone_40'>
             <static>true</static>
-            <pose>55.57170961228139 -5.373071145833092 0 0 0 0</pose>
+            <pose>18.241144280287326 -10.756106018137153 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2089,7 +2091,7 @@
     
         <model name='cone_41'>
             <static>true</static>
-            <pose>57.18284455742446 -5.790175742348863 0 0 0 0</pose>
+            <pose>19.577335444734018 -11.856217239538836 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2132,7 +2134,7 @@
     
         <model name='cone_42'>
             <static>true</static>
-            <pose>58.72197446925063 -6.362724096485099 0 0 0 0</pose>
+            <pose>21.030238473975537 -12.878007532199645 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2175,7 +2177,7 @@
     
         <model name='cone_43'>
             <static>true</static>
-            <pose>60.02626989545873 -7.297675934022811 0 0 0 0</pose>
+            <pose>22.352694964396804 -13.649919657317817 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2218,7 +2220,7 @@
     
         <model name='cone_44'>
             <static>true</static>
-            <pose>60.34456406680583 -8.85705027419842 0 0 0 0</pose>
+            <pose>23.795945841192644 -14.33261637697834 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2261,7 +2263,7 @@
     
         <model name='cone_45'>
             <static>true</static>
-            <pose>59.668864798298536 -10.280041291408226 0 0 0 0</pose>
+            <pose>25.364505679373007 -14.91855750601108 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2304,7 +2306,7 @@
     
         <model name='cone_46'>
             <static>true</static>
-            <pose>58.559149127004446 -11.65900997355598 0 0 0 0</pose>
+            <pose>27.03087372930074 -15.419787932559695 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2347,7 +2349,7 @@
     
         <model name='cone_47'>
             <static>true</static>
-            <pose>57.294075532158644 -12.897604412700154 0 0 0 0</pose>
+            <pose>28.76291714356896 -15.851186186950684 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2390,7 +2392,7 @@
     
         <model name='cone_48'>
             <static>true</static>
-            <pose>56.06158917118052 -13.943816752823619 0 0 0 0</pose>
+            <pose>30.52850307477073 -16.227630799510557 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2433,7 +2435,7 @@
     
         <model name='cone_49'>
             <static>true</static>
-            <pose>54.70185656634292 -14.981893044283126 0 0 0 0</pose>
+            <pose>32.29549867549919 -16.564000300565816 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2476,7 +2478,7 @@
     
         <model name='cone_50'>
             <static>true</static>
-            <pose>53.247509107158194 -15.992231047561331 0 0 0 0</pose>
+            <pose>34.03177109834741 -16.87517322044298 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2519,7 +2521,7 @@
     
         <model name='cone_51'>
             <static>true</static>
-            <pose>51.73117818313876 -16.9552285231409 0 0 0 0</pose>
+            <pose>35.70518749590851 -17.176028089468545 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2562,7 +2564,7 @@
     
         <model name='cone_52'>
             <static>true</static>
-            <pose>50.18549518379692 -17.851283231504503 0 0 0 0</pose>
+            <pose>37.28361502077556 -17.48144343796902 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2605,7 +2607,7 @@
     
         <model name='cone_53'>
             <static>true</static>
-            <pose>48.64309149864512 -18.660792933134807 0 0 0 0</pose>
+            <pose>39.00709968951099 -17.874910659776198 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2648,7 +2650,7 @@
     
         <model name='cone_54'>
             <static>true</static>
-            <pose>47.13072201594224 -19.36812468905719 0 0 0 0</pose>
+            <pose>40.49200352098193 -18.322080156101617 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2691,7 +2693,7 @@
     
         <model name='cone_55'>
             <static>true</static>
-            <pose>45.650742295588586 -19.9741261604226 0 0 0 0</pose>
+            <pose>42.00477944516541 -19.046280233250176 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2734,7 +2736,7 @@
     
         <model name='cone_56'>
             <static>true</static>
-            <pose>44.19917631211612 -20.48392169686632 0 0 0 0</pose>
+            <pose>42.95997438861665 -20.2429032962294 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2777,7 +2779,7 @@
     
         <model name='cone_57'>
             <static>true</static>
-            <pose>42.48920500426688 -20.97589960193798 0 0 0 0</pose>
+            <pose>42.69337822702063 -21.843549365135377 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2820,7 +2822,7 @@
     
         <model name='cone_58'>
             <static>true</static>
-            <pose>40.80755339170423 -21.345574925453047 0 0 0 0</pose>
+            <pose>41.8467839644869 -23.15918054453069 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2863,7 +2865,7 @@
     
         <model name='cone_59'>
             <static>true</static>
-            <pose>39.14735088216143 -21.60180255726457 0 0 0 0</pose>
+            <pose>40.76651903160999 -24.367949290518986 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2906,7 +2908,7 @@
     
         <model name='cone_60'>
             <static>true</static>
-            <pose>37.501726883371774 -21.75343738722564 0 0 0 0</pose>
+            <pose>39.659324266168376 -25.40655685712113 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2949,7 +2951,7 @@
     
         <model name='cone_61'>
             <static>true</static>
-            <pose>35.86381080306849 -21.80933430518932 0 0 0 0</pose>
+            <pose>38.39877814525737 -26.452710166673192 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -2992,7 +2994,7 @@
     
         <model name='cone_62'>
             <static>true</static>
-            <pose>34.22673204898486 -21.778348201008683 0 0 0 0</pose>
+            <pose>37.017512058389336 -27.48680697965782 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3035,7 +3037,7 @@
     
         <model name='cone_63'>
             <static>true</static>
-            <pose>32.58362002885417 -21.669333964536808 0 0 0 0</pose>
+            <pose>35.548157395076686 -28.48924505655767 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3078,7 +3080,7 @@
     
         <model name='cone_64'>
             <static>true</static>
-            <pose>30.927604150409667 -21.491146485626757 0 0 0 0</pose>
+            <pose>34.023345544831784 -29.440422157855455 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3121,7 +3123,7 @@
     
         <model name='cone_65'>
             <static>true</static>
-            <pose>29.251813821384637 -21.252640654131604 0 0 0 0</pose>
+            <pose>32.47570789716696 -30.320736044033787 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3164,7 +3166,7 @@
     
         <model name='cone_66'>
             <static>true</static>
-            <pose>27.550173132553923 -20.96211419344927 0 0 0 0</pose>
+            <pose>30.93783557977224 -31.110611670545048 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3207,7 +3209,7 @@
     
         <model name='cone_67'>
             <static>true</static>
-            <pose>25.827224494790407 -20.620420133358962 0 0 0 0</pose>
+            <pose>29.432262123135825 -31.797267427286585 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3250,7 +3252,7 @@
     
         <model name='cone_68'>
             <static>true</static>
-            <pose>24.0950787814773 -20.223105119575926 0 0 0 0</pose>
+            <pose>27.958283233133724 -32.383617763063356 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3293,7 +3295,7 @@
     
         <model name='cone_69'>
             <static>true</static>
-            <pose>22.366009571439967 -19.76560172212773 0 0 0 0</pose>
+            <pose>26.511922872574537 -32.8747870354292 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3336,7 +3338,7 @@
     
         <model name='cone_70'>
             <static>true</static>
-            <pose>20.65229044350376 -19.243342511041966 0 0 0 0</pose>
+            <pose>24.80714863840269 -33.34576625400163 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3379,7 +3381,7 @@
     
         <model name='cone_71'>
             <static>true</static>
-            <pose>18.96619497649403 -18.651760056346205 0 0 0 0</pose>
+            <pose>23.12954900080632 -33.69591870599297 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3422,7 +3424,7 @@
     
         <model name='cone_72'>
             <static>true</static>
-            <pose>17.319996749236154 -17.98628692806802 0 0 0 0</pose>
+            <pose>21.472253367518675 -33.934099281256294 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3465,7 +3467,7 @@
     
         <model name='cone_73'>
             <static>true</static>
-            <pose>15.725969340555503 -17.242355696235016 0 0 0 0</pose>
+            <pose>19.828391146273052 -34.06916286964467 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3508,7 +3510,7 @@
     
         <model name='cone_74'>
             <static>true</static>
-            <pose>14.19638632927743 -16.41539893087476 0 0 0 0</pose>
+            <pose>18.191091744802677 -34.109964361011166 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3551,7 +3553,7 @@
     
         <model name='cone_75'>
             <static>true</static>
-            <pose>12.743521294227293 -15.500849202014827 0 0 0 0</pose>
+            <pose>16.55348457084084 -34.06535864520886 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3594,7 +3596,7 @@
     
         <model name='cone_76'>
             <static>true</static>
-            <pose>11.379647814230458 -14.4941390796828 0 0 0 0</pose>
+            <pose>14.908699032120811 -33.944200612090825 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3637,7 +3639,7 @@
     
         <model name='cone_77'>
             <static>true</static>
-            <pose>10.117039468112301 -13.390701133906276 0 0 0 0</pose>
+            <pose>13.24986453637585 -33.75534515151012 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3680,7 +3682,7 @@
     
         <model name='cone_78'>
             <static>true</static>
-            <pose>8.967969834698161 -12.18596793471281 0 0 0 0</pose>
+            <pose>11.570110491339229 -33.50764715331984 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3723,7 +3725,7 @@
     
         <model name='cone_79'>
             <static>true</static>
-            <pose>7.944440960515461 -10.875549781513982 0 0 0 0</pose>
+            <pose>9.864174581533813 -33.20883391582918 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3766,7 +3768,7 @@
     
         <model name='cone_80'>
             <static>true</static>
-            <pose>7.036492652361684 -9.469432189368277 0 0 0 0</pose>
+            <pose>8.138840765982497 -32.85818687942705 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3809,7 +3811,7 @@
     
         <model name='cone_81'>
             <static>true</static>
-            <pose>6.196387090139864 -8.002327729404733 0 0 0 0</pose>
+            <pose>6.406355471352492 -32.45115765100346 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3852,7 +3854,7 @@
     
         <model name='cone_82'>
             <static>true</static>
-            <pose>5.372657115905081 -6.511389982250673 0 0 0 0</pose>
+            <pose>4.678992276469125 -31.98317880058598 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3895,7 +3897,7 @@
     
         <model name='cone_83'>
             <static>true</static>
-            <pose>4.513835571712422 -5.033772528533428 0 0 0 0</pose>
+            <pose>2.96902476015779 -31.449682898202184 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3938,7 +3940,7 @@
     
         <model name='cone_84'>
             <static>true</static>
-            <pose>3.568455299616965 -3.606628948880319 0 0 0 0</pose>
+            <pose>1.288726501243842 -30.84610251387966 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -3981,7 +3983,7 @@
     
         <model name='cone_85'>
             <static>true</static>
-            <pose>2.485049141673798 -2.267112823918677 0 0 0 0</pose>
+            <pose>-0.34962892144737134 -30.16787021764599 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4024,7 +4026,7 @@
     
         <model name='cone_86'>
             <static>true</static>
-            <pose>1.2128167555790779 -1.052204164906874 0 0 0 0</pose>
+            <pose>-1.9337679290904686 -29.41041857952875 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4067,7 +4069,7 @@
     
         <model name='cone_87'>
             <static>true</static>
-            <pose>-0.12724071870976 0.045836236162932996 0 0 0 0</pose>
+            <pose>-3.4514169428600927 -28.56918016955551 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4110,7 +4112,7 @@
     
         <model name='cone_88'>
             <static>true</static>
-            <pose>-2.7326610899534858 -1.6013901826307853 0 0 0 0</pose>
+            <pose>-5.823828855879244 -30.62622443640042 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4153,7 +4155,7 @@
     
         <model name='cone_89'>
             <static>true</static>
-            <pose>-3.720584289660846 -0.22756313963876562 0 0 0 0</pose>
+            <pose>-7.147029688644965 -29.711753762863616 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4196,7 +4198,7 @@
     
         <model name='cone_90'>
             <static>true</static>
-            <pose>-4.2857805333479195 1.4076814969301017 0 0 0 0</pose>
+            <pose>-8.410313413769712 -28.710894709226853 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4239,7 +4241,7 @@
     
         <model name='cone_91'>
             <static>true</static>
-            <pose>-4.30535285337218 3.1064907441268867 0 0 0 0</pose>
+            <pose>-9.603733272247165 -27.618665620598133 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4282,7 +4284,7 @@
     
         <model name='cone_92'>
             <static>true</static>
-            <pose>-3.856493829765818 4.625940584928528 0 0 0 0</pose>
+            <pose>-10.716259064711116 -26.430781122426087 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4325,7 +4327,7 @@
     
         <model name='cone_93'>
             <static>true</static>
-            <pose>-2.89758214640646 6.181642048234691 0 0 0 0</pose>
+            <pose>-11.734008069524322 -25.146781813856563 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4368,7 +4370,7 @@
     
         <model name='cone_94'>
             <static>true</static>
-            <pose>-1.6755237462170356 7.455904888819848 0 0 0 0</pose>
+            <pose>-12.620854505737583 -23.827231221924198 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4411,7 +4413,7 @@
     
         <model name='cone_95'>
             <static>true</static>
-            <pose>-0.2546839513675381 8.55512988995229 0 0 0 0</pose>
+            <pose>-13.398473045651919 -22.52095508091903 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4454,7 +4456,7 @@
     
         <model name='cone_96'>
             <static>true</static>
-            <pose>1.342119524744676 9.536033822277975 0 0 0 0</pose>
+            <pose>-14.241773155861141 -21.005420484203196 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4497,7 +4499,7 @@
     
         <model name='cone_97'>
             <static>true</static>
-            <pose>2.7340505224103575 10.25253852719651 0 0 0 0</pose>
+            <pose>-15.039884816931115 -19.58123940690634 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4540,7 +4542,7 @@
     
         <model name='cone_98'>
             <static>true</static>
-            <pose>4.2161995167793735 10.913583246317454 0 0 0 0</pose>
+            <pose>-15.837469025340091 -18.280907896011048 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4583,7 +4585,7 @@
     
         <model name='cone_99'>
             <static>true</static>
-            <pose>5.776396036670017 11.519818692922463 0 0 0 0</pose>
+            <pose>-16.814635584075027 -16.952136942546517 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4626,7 +4628,7 @@
     
         <model name='cone_100'>
             <static>true</static>
-            <pose>7.401395416862833 12.069680242015654 0 0 0 0</pose>
+            <pose>-17.9008647495751 -15.832478156273915 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4669,7 +4671,7 @@
     
         <model name='cone_101'>
             <static>true</static>
-            <pose>9.077247858498804 12.560235963151072 0 0 0 0</pose>
+            <pose>-19.280814340040152 -14.703685873284883 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4712,7 +4714,7 @@
     
         <model name='cone_102'>
             <static>true</static>
-            <pose>10.789623586237056 12.987650302223212 0 0 0 0</pose>
+            <pose>-16.560198738110678 -9.212258380027416 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4755,7 +4757,7 @@
     
         <model name='cone_103'>
             <static>true</static>
-            <pose>12.524099912580297 13.347422415377824 0 0 0 0</pose>
+            <pose>-20.13266108995348 -13.90139018263079 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4798,7 +4800,7 @@
     
         <model name='cone_104'>
             <static>true</static>
-            <pose>14.266435669399232 13.634473465121127 0 0 0 0</pose>
+            <pose>-21.120584289660847 -12.527563139638758 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4841,7 +4843,7 @@
     
         <model name='cone_105'>
             <static>true</static>
-            <pose>16.002862616465737 13.843104875388857 0 0 0 0</pose>
+            <pose>-21.68578053334791 -10.892318503069939 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4884,7 +4886,7 @@
     
         <model name='cone_106'>
             <static>true</static>
-            <pose>17.720422892564706 13.966806850622884 0 0 0 0</pose>
+            <pose>-21.705352853372176 -9.193509255873092 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4927,7 +4929,7 @@
     
         <model name='cone_107'>
             <static>true</static>
-            <pose>19.407373507453457 13.997845930450703 0 0 0 0</pose>
+            <pose>-21.256493829765816 -7.674059415071472 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -4970,7 +4972,7 @@
     
         <model name='cone_108'>
             <static>true</static>
-            <pose>21.053644472626175 13.926484567893873 0 0 0 0</pose>
+            <pose>-20.29758214640648 -6.118357951765337 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5013,7 +5015,7 @@
     
         <model name='cone_109'>
             <static>true</static>
-            <pose>22.64816158447624 13.740140984563936 0 0 0 0</pose>
+            <pose>-19.07552374621703 -4.844095111180149 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5056,7 +5058,7 @@
     
         <model name='cone_110'>
             <static>true</static>
-            <pose>24.157568887396003 13.43473317013667 0 0 0 0</pose>
+            <pose>-17.65468395136753 -3.744870110047705 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5099,7 +5101,7 @@
     
         <model name='cone_111'>
             <static>true</static>
-            <pose>25.913410598802333 12.898466059611977 0 0 0 0</pose>
+            <pose>-16.057880475255317 -2.763966177722021 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5142,7 +5144,7 @@
     
         <model name='cone_112'>
             <static>true</static>
-            <pose>27.523774893134956 12.212574790876198 0 0 0 0</pose>
+            <pose>-14.665949477589635 -2.0474614728034872 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5185,7 +5187,7 @@
     
         <model name='cone_113'>
             <static>true</static>
-            <pose>28.992276656199778 11.40610665115323 0 0 0 0</pose>
+            <pose>-13.183800483220626 -1.3864167536825467 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5228,7 +5230,7 @@
     
         <model name='cone_114'>
             <static>true</static>
-            <pose>30.328905856955274 10.510388325460376 0 0 0 0</pose>
+            <pose>-11.623603963329977 -0.7801813070775356 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5271,7 +5273,7 @@
     
         <model name='cone_115'>
             <static>true</static>
-            <pose>31.549884418955205 9.555339005273094 0 0 0 0</pose>
+            <pose>-9.99860458313716 -0.23031975798434656 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5314,7 +5316,7 @@
     
         <model name='cone_116'>
             <static>true</static>
-            <pose>32.891118648073196 8.3677710937792 0 0 0 0</pose>
+            <pose>-8.322752141501194 0.260235963151072 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5357,7 +5359,7 @@
     
         <model name='cone_117'>
             <static>true</static>
-            <pose>34.13274766620763 7.170527529065531 0 0 0 0</pose>
+            <pose>-6.6103764137629435 0.6876503022232128 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5400,7 +5402,7 @@
     
         <model name='cone_118'>
             <static>true</static>
-            <pose>35.31120348286073 5.994876931982215 0 0 0 0</pose>
+            <pose>-4.8759000874197005 1.0474224153778242 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5443,7 +5445,7 @@
     
         <model name='cone_119'>
             <static>true</static>
-            <pose>36.45980979923484 4.866948849398553 0 0 0 0</pose>
+            <pose>-3.133564330600769 1.334473465121127 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5486,7 +5488,7 @@
     
         <model name='cone_120'>
             <static>true</static>
-            <pose>37.608918903337894 3.808372516289301 0 0 0 0</pose>
+            <pose>-1.3971373835342638 1.543104875388856 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5529,7 +5531,7 @@
     
         <model name='cone_121'>
             <static>true</static>
-            <pose>38.78766299847585 2.8360022629657125 0 0 0 0</pose>
+            <pose>0.32042289256469675 1.6668068506228835 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5572,7 +5574,7 @@
     
         <model name='cone_122'>
             <static>true</static>
-            <pose>40.02704341003546 1.9617196177467162 0 0 0 0</pose>
+            <pose>2.007373507453455 1.6978459304507036 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5615,7 +5617,7 @@
     
         <model name='cone_123'>
             <static>true</static>
-            <pose>41.36354145449291 1.1937661029862663 0 0 0 0</pose>
+            <pose>3.6536444726261728 1.6264845678938724 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5658,7 +5660,7 @@
     
         <model name='cone_124'>
             <static>true</static>
-            <pose>42.85769219440993 0.5328419995153557 0 0 0 0</pose>
+            <pose>5.248161584476235 1.4401409845639388 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5701,7 +5703,7 @@
     
         <model name='cone_125'>
             <static>true</static>
-            <pose>44.28369529134818 0.04493615350471636 0 0 0 0</pose>
+            <pose>6.757568887396003 1.1347331701366712 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5744,7 +5746,7 @@
     
         <model name='cone_126'>
             <static>true</static>
-            <pose>45.84121755510962 -0.38846961195139773 0 0 0 0</pose>
+            <pose>8.513410598802317 0.598466059611984 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5787,7 +5789,7 @@
     
         <model name='cone_127'>
             <static>true</static>
-            <pose>47.491120756893 -0.7731802468410889 0 0 0 0</pose>
+            <pose>10.123774893134946 -0.08742520912379614 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5830,7 +5832,7 @@
     
         <model name='cone_128'>
             <static>true</static>
-            <pose>49.19659337360001 -1.118820248498929 0 0 0 0</pose>
+            <pose>11.59227665619977 -0.8938933488467629 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5873,7 +5875,7 @@
     
         <model name='cone_129'>
             <static>true</static>
-            <pose>50.923359263887356 -1.437465298543776 0 0 0 0</pose>
+            <pose>12.928905856955273 -1.789611674539623 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5916,7 +5918,7 @@
     
         <model name='cone_130'>
             <static>true</static>
-            <pose>52.63991211563324 -1.7430060767199462 0 0 0 0</pose>
+            <pose>14.149884418955212 -2.744660994726911 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -5959,7 +5961,7 @@
     
         <model name='cone_131'>
             <static>true</static>
-            <pose>54.31814950576881 -2.05115094226978 0 0 0 0</pose>
+            <pose>15.491118648073211 -3.932228906220809 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6002,7 +6004,7 @@
     
         <model name='cone_132'>
             <static>true</static>
-            <pose>55.934789132229504 -2.3802831710327377 0 0 0 0</pose>
+            <pose>16.732747666207633 -5.129472470934474 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6045,7 +6047,7 @@
     
         <model name='cone_133'>
             <static>true</static>
-            <pose>57.474164657962426 -2.754067943019051 0 0 0 0</pose>
+            <pose>17.911203482860746 -6.305123068017796 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6088,7 +6090,7 @@
     
         <model name='cone_134'>
             <static>true</static>
-            <pose>58.93314615452268 -3.2085375463969354 0 0 0 0</pose>
+            <pose>19.05980979923486 -7.4330511506014645 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6131,7 +6133,7 @@
     
         <model name='cone_135'>
             <static>true</static>
-            <pose>60.32672530759359 -3.8114328999306397 0 0 0 0</pose>
+            <pose>20.208918903337914 -8.491627483710714 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6174,7 +6176,7 @@
     
         <model name='cone_136'>
             <static>true</static>
-            <pose>61.67333932132657 -4.709332714959701 0 0 0 0</pose>
+            <pose>21.38766299847583 -9.463997737034271 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6217,7 +6219,7 @@
     
         <model name='cone_137'>
             <static>true</static>
-            <pose>62.858105841823985 -6.160327425694543 0 0 0 0</pose>
+            <pose>22.62704341003546 -10.338280382253282 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6260,7 +6262,7 @@
     
         <model name='cone_138'>
             <static>true</static>
-            <pose>63.37070622706809 -7.750549892429087 0 0 0 0</pose>
+            <pose>23.9635414544929 -11.10623389701373 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6303,7 +6305,7 @@
     
         <model name='cone_139'>
             <static>true</static>
-            <pose>63.31571727007568 -9.304083827055072 0 0 0 0</pose>
+            <pose>25.457692194409937 -11.767158000484645 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6346,7 +6348,7 @@
     
         <model name='cone_140'>
             <static>true</static>
-            <pose>62.77296964809597 -10.89254521987307 0 0 0 0</pose>
+            <pose>26.883695291348204 -12.25506384649529 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6389,7 +6391,7 @@
     
         <model name='cone_141'>
             <static>true</static>
-            <pose>61.96175698937492 -12.238147965516863 0 0 0 0</pose>
+            <pose>28.441217555109603 -12.688469611951394 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6432,7 +6434,7 @@
     
         <model name='cone_142'>
             <static>true</static>
-            <pose>60.96096805209238 -13.477331415510678 0 0 0 0</pose>
+            <pose>30.09112075689302 -13.07318024684109 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6475,7 +6477,7 @@
     
         <model name='cone_143'>
             <static>true</static>
-            <pose>59.7961367348354 -14.669673584957348 0 0 0 0</pose>
+            <pose>31.79659337360001 -13.418820248498928 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6518,7 +6520,7 @@
     
         <model name='cone_144'>
             <static>true</static>
-            <pose>58.487256332737374 -15.834013072023144 0 0 0 0</pose>
+            <pose>33.5233592638874 -13.737465298543782 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6561,7 +6563,7 @@
     
         <model name='cone_145'>
             <static>true</static>
-            <pose>57.05665348771467 -16.970599655617146 0 0 0 0</pose>
+            <pose>35.23991211563325 -14.043006076719948 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6604,7 +6606,7 @@
     
         <model name='cone_146'>
             <static>true</static>
-            <pose>55.841119367622255 -17.854364485061986 0 0 0 0</pose>
+            <pose>36.918149505768824 -14.35115094226978 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6647,7 +6649,7 @@
     
         <model name='cone_147'>
             <static>true</static>
-            <pose>54.57691027097998 -18.708602924990966 0 0 0 0</pose>
+            <pose>38.5347891322295 -14.680283171032737 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6690,7 +6692,7 @@
     
         <model name='cone_148'>
             <static>true</static>
-            <pose>53.27769800857459 -19.525885332116754 0 0 0 0</pose>
+            <pose>40.074164657962406 -15.054067943019046 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6733,7 +6735,7 @@
     
         <model name='cone_149'>
             <static>true</static>
-            <pose>51.95710519361881 -20.298188805442646 0 0 0 0</pose>
+            <pose>41.533146154522655 -15.508537546396925 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6776,7 +6778,7 @@
     
         <model name='cone_150'>
             <static>true</static>
-            <pose>50.62834827036202 -21.017143527472836 0 0 0 0</pose>
+            <pose>42.92672530759355 -16.111432899930623 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6819,7 +6821,7 @@
     
         <model name='cone_151'>
             <static>true</static>
-            <pose>48.97623148764328 -21.827252811908842 0 0 0 0</pose>
+            <pose>44.27333932132652 -17.00933271495965 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6862,7 +6864,7 @@
     
         <model name='cone_152'>
             <static>true</static>
-            <pose>47.34775627558108 -22.531188038743323 0 0 0 0</pose>
+            <pose>45.458105841823915 -18.460327425694413 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6905,7 +6907,7 @@
     
         <model name='cone_153'>
             <static>true</static>
-            <pose>45.74104535723275 -23.131983657321502 0 0 0 0</pose>
+            <pose>45.97070622706808 -20.05054989242895 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6948,7 +6950,7 @@
     
         <model name='cone_154'>
             <static>true</static>
-            <pose>44.153987021845985 -23.6332742531607 0 0 0 0</pose>
+            <pose>45.91571727007564 -21.604083827055327 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -6991,7 +6993,7 @@
     
         <model name='cone_155'>
             <static>true</static>
-            <pose>42.585027957972905 -24.038960844500348 0 0 0 0</pose>
+            <pose>45.37296964809602 -23.192545219872972 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7034,7 +7036,7 @@
     
         <model name='cone_156'>
             <static>true</static>
-            <pose>41.03304602380727 -24.35336536617624 0 0 0 0</pose>
+            <pose>44.56175698937491 -24.538147965516863 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7077,7 +7079,7 @@
     
         <model name='cone_157'>
             <static>true</static>
-            <pose>39.497151489188255 -24.5813393560512 0 0 0 0</pose>
+            <pose>43.56096805209245 -25.777331415510606 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7120,7 +7122,7 @@
     
         <model name='cone_158'>
             <static>true</static>
-            <pose>37.976448331881606 -24.72829991647715 0 0 0 0</pose>
+            <pose>42.39613673483539 -26.969673584957366 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7163,7 +7165,7 @@
     
         <model name='cone_159'>
             <static>true</static>
-            <pose>36.4697994244833 -24.80018387303524 0 0 0 0</pose>
+            <pose>41.08725633273735 -28.13401307202318 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7206,7 +7208,7 @@
     
         <model name='cone_160'>
             <static>true</static>
-            <pose>34.678128110870794 -24.79629119445277 0 0 0 0</pose>
+            <pose>39.65665348771468 -29.27059965561714 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7249,7 +7251,7 @@
     
         <model name='cone_161'>
             <static>true</static>
-            <pose>32.90065571986617 -24.70482950857038 0 0 0 0</pose>
+            <pose>38.44111936762225 -30.154364485061997 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7292,7 +7294,7 @@
     
         <model name='cone_162'>
             <static>true</static>
-            <pose>31.132435292785832 -24.537308560433768 0 0 0 0</pose>
+            <pose>37.17691027098 -31.00860292499095 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7335,7 +7337,7 @@
     
         <model name='cone_163'>
             <static>true</static>
-            <pose>29.36743908263895 -24.30502132711903 0 0 0 0</pose>
+            <pose>35.87769800857459 -31.825885332116755 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7378,7 +7380,7 @@
     
         <model name='cone_164'>
             <static>true</static>
-            <pose>27.596802197616114 -24.018409057637772 0 0 0 0</pose>
+            <pose>34.55710519361879 -32.59818880544266 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7421,7 +7423,7 @@
     
         <model name='cone_165'>
             <static>true</static>
-            <pose>26.100572489951723 -23.73933690732711 0 0 0 0</pose>
+            <pose>33.22834827036206 -33.317143527472815 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7464,7 +7466,7 @@
     
         <model name='cone_166'>
             <static>true</static>
-            <pose>24.587634672988106 -23.42029411918107 0 0 0 0</pose>
+            <pose>31.576231487643284 -34.127252811908846 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7507,7 +7509,7 @@
     
         <model name='cone_167'>
             <static>true</static>
-            <pose>23.06458162880117 -23.0580067297323 0 0 0 0</pose>
+            <pose>29.947756275581128 -34.8311880387433 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7550,7 +7552,7 @@
     
         <model name='cone_168'>
             <static>true</static>
-            <pose>21.53796470019823 -22.649061742868483 0 0 0 0</pose>
+            <pose>28.34104535723275 -35.4319836573215 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7593,7 +7595,7 @@
     
         <model name='cone_169'>
             <static>true</static>
-            <pose>20.014309976374072 -22.18987789917322 0 0 0 0</pose>
+            <pose>26.75398702184599 -35.9332742531607 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7636,7 +7638,7 @@
     
         <model name='cone_170'>
             <static>true</static>
-            <pose>18.50014436327252 -21.676672875395024 0 0 0 0</pose>
+            <pose>25.185027957972867 -36.33896084450036 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7679,7 +7681,7 @@
     
         <model name='cone_171'>
             <static>true</static>
-            <pose>17.002036079887883 -21.105428679591807 0 0 0 0</pose>
+            <pose>23.633046023807243 -36.653365366176246 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7722,7 +7724,7 @@
     
         <model name='cone_172'>
             <static>true</static>
-            <pose>15.526655351791092 -20.47185909102628 0 0 0 0</pose>
+            <pose>22.097151489188256 -36.88133935605119 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7765,7 +7767,7 @@
     
         <model name='cone_173'>
             <static>true</static>
-            <pose>14.08086185308579 -19.771386328218497 0 0 0 0</pose>
+            <pose>20.576448331881608 -37.02829991647715 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7808,7 +7810,7 @@
     
         <model name='cone_174'>
             <static>true</static>
-            <pose>12.671825039664801 -18.99913902504342 0 0 0 0</pose>
+            <pose>19.069799424483342 -37.100183873035235 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7851,7 +7853,7 @@
     
         <model name='cone_175'>
             <static>true</static>
-            <pose>11.307180446196618 -18.149989971844864 0 0 0 0</pose>
+            <pose>17.27812811087076 -37.09629119445277 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7894,7 +7896,7 @@
     
         <model name='cone_176'>
             <static>true</static>
-            <pose>9.99521711920426 -17.218658799225018 0 0 0 0</pose>
+            <pose>15.500655719866211 -37.00482950857038 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7937,7 +7939,7 @@
     
         <model name='cone_177'>
             <static>true</static>
-            <pose>8.745076269506614 -16.19990863821311 0 0 0 0</pose>
+            <pose>13.73243529278587 -36.83730856043377 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -7980,7 +7982,7 @@
     
         <model name='cone_178'>
             <static>true</static>
-            <pose>7.5669181371790355 -15.088860567844117 0 0 0 0</pose>
+            <pose>11.967439082638993 -36.60502132711903 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8023,7 +8025,7 @@
     
         <model name='cone_179'>
             <static>true</static>
-            <pose>6.471987191537794 -13.881426714198017 0 0 0 0</pose>
+            <pose>10.196802197616089 -36.318409057637766 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8066,7 +8068,7 @@
     
         <model name='cone_180'>
             <static>true</static>
-            <pose>5.477861887125542 -12.583176109114646 0 0 0 0</pose>
+            <pose>8.700572489951696 -36.039336907327105 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8109,7 +8111,7 @@
     
         <model name='cone_181'>
             <static>true</static>
-            <pose>4.6162010128357975 -11.264058147788093 0 0 0 0</pose>
+            <pose>7.18763467298808 -35.72029411918106 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8152,7 +8154,7 @@
     
         <model name='cone_182'>
             <static>true</static>
-            <pose>3.8555951700548876 -9.963532604159585 0 0 0 0</pose>
+            <pose>5.66458162880117 -35.358006729732296 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8195,7 +8197,7 @@
     
         <model name='cone_183'>
             <static>true</static>
-            <pose>3.023415807209485 -8.460775560418401 0 0 0 0</pose>
+            <pose>4.1379647001981965 -34.94906174286847 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8238,7 +8240,7 @@
     
         <model name='cone_184'>
             <static>true</static>
-            <pose>2.2281962660266825 -7.055122535401337 0 0 0 0</pose>
+            <pose>2.614309976374046 -34.48987789917321 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8281,7 +8283,7 @@
     
         <model name='cone_185'>
             <static>true</static>
-            <pose>1.4270721634988632 -5.778124674248378 0 0 0 0</pose>
+            <pose>1.100144363272494 -33.97667287539502 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8324,7 +8326,7 @@
     
         <model name='cone_186'>
             <static>true</static>
-            <pose>0.43877525494253655 -4.479856834959731 0 0 0 0</pose>
+            <pose>-0.39796392011208503 -33.40542867959182 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8367,7 +8369,7 @@
     
         <model name='cone_187'>
             <static>true</static>
-            <pose>-0.6888064766201856 -3.372512136439969 0 0 0 0</pose>
+            <pose>-1.8733446482089073 -32.77185909102628 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>
@@ -8410,7 +8412,50 @@
     
         <model name='cone_188'>
             <static>true</static>
-            <pose>-1.8808143400401645 -2.4036858732848754 0 0 0 0</pose>
+            <pose>-3.319138146914231 -32.07138632821849 0 0 0 0</pose>
+            <link name='cone_link'>
+                <inertial>
+                    <mass>0.45</mass>
+                    <inertia>
+                        <ixx>0.5</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>0.5</iyy>
+                        <iyz>0</iyz>
+                        <izz>0.5</izz>
+                    </inertia>
+                </inertial>
+                <visual name='visual'>
+                    <geometry>
+                        <mesh>
+                            <scale>1 1 1</scale><!-- 1:1 = 228x228x325mm -->
+                            <uri>../models/cone_325_no_color.stl</uri>
+                        </mesh>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 1.0 0.0 1</ambient>
+                        <diffuse>1.0 1.0 0.0 1</diffuse>
+                        <specular>1.0 1.0 0.0 1</specular>
+                    </material>
+                </visual>
+                <collision name='collision'>
+                    <geometry>
+                        <mesh>
+                            <uri>../models/cone_325_no_color.stl</uri>
+                        </mesh>
+                    </geometry>
+                </collision>
+                <sensor name='sensor_contact' type='contact'>
+                    <contact>
+                        <collision>collision</collision>
+                    </contact>
+                </sensor>
+            </link>
+        </model>
+    
+        <model name='cone_189'>
+            <static>true</static>
+            <pose>-4.728174960335226 -31.299139025043402 0 0 0 0</pose>
             <link name='cone_link'>
                 <inertial>
                     <mass>0.45</mass>

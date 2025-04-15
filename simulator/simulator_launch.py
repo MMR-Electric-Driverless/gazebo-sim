@@ -120,11 +120,19 @@ def generate_launch_description():
             </link>
         </model>
     """
+
+    df = pd.read_csv(race_track)
+    x, y, z, rx, ry, rz = (map(float, vehicle_params['abs_pose']))
+    df.T.iloc[0]-=(x/float(cones_params['scale']))
+    df.T.iloc[1]-=(y/float(cones_params['scale']))
+    abs_pose=(str(0)+' '+str(0)+' '+str(z)+' '+str(rx)+' '+str(ry)+' '+str(rz))
+    print(abs_pose)
     
     with open(sdf_template_file, 'r') as sdf_file_in:
         sdf_content = sdf_file_in.read()
 
-    sdf_content = sdf_content.replace('${vehicle_abs_pose}', ' '.join(map(str, vehicle_params['abs_pose'])))
+    sdf_content = sdf_content.replace('${vehicle_abs_pose}', abs_pose)
+
     sdf_content = sdf_content.replace('${vehicle_linear_speed_f}', str(vehicle_params['linear_speed_f']))
     sdf_content = sdf_content.replace('${lidar_pose}', ' '.join(map(str, lidar_params['pose'])))
     sdf_content = sdf_content.replace('${lidar_hz}', str(lidar_params['hz']))
@@ -141,8 +149,7 @@ def generate_launch_description():
     sdf_content = sdf_content.replace('${lidar_range_resolution}', str(lidar_params['range_resolution']))
     sdf_content = sdf_content.replace('${noise_mean}', str(lidar_params['noise_mean']))
     sdf_content = sdf_content.replace('${noise_std}', str(lidar_params['noise_std']))
-
-    df = pd.read_csv(race_track)
+    
     ext_df = pd.DataFrame()
     df, ext_df = positions(df, ext_df, scale=cones_params['scale'], min_dist=cones_params['min_dist'], track_width=cones_params['track_width'])
 
