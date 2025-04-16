@@ -55,7 +55,8 @@ def generate_launch_description():
     rviz_config_file = os.path.join(pkg_dir, '../rviz_config.rviz')  #optional
     bridge_yaml = os.path.join(pkg_dir, '../bridge.yaml')
     race_track = os.path.join(pkg_dir, '../tracks/race_track.csv')  #csv file with X and Y features
-    filter = os.path.join(pkg_dir, 'filter.py')
+    p_filter = os.path.join(pkg_dir, 'filter.py')
+    o_filter = os.path.join(pkg_dir, 'odom_filter.py')
 
     if not os.path.exists(gazebo_params_file):
         raise FileNotFoundError(f"Il file YAML dei parametri non esiste: {gazebo_params_file}")
@@ -192,7 +193,12 @@ def generate_launch_description():
     )
 
     pointcloud2_filter = ExecuteProcess(
-        cmd=['python3', filter],
+        cmd=['python3', p_filter],
+        output='screen'
+    )
+
+    odom_filter = ExecuteProcess(
+        cmd=['python3', o_filter],
         output='screen'
     )
     print('\n\n\n[MESSAGE]: To move the car click on the plugins dropdown list in the top right corner (vertical ellipsis), select the Key Publisher.\n\n\n')
@@ -207,5 +213,6 @@ def generate_launch_description():
         ignition_gazebo,
         ros2_bridge,
         rviz2,
+        odom_filter,
         pointcloud2_filter
     ])
