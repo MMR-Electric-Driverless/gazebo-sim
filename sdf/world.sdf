@@ -238,7 +238,7 @@
             </link>
 
             <link name='caster'>
-                <pose relative_to="chassis"> 0.7 0 -0.45 0 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis"> 0.7 0 -0.3 0 0 0</pose> <!--angles are in radian-->
                 <inertial>
                   <mass>1</mass>
                   <inertia>

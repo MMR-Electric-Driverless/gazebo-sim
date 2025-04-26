@@ -214,5 +214,5 @@ def generate_launch_description():
         ros2_bridge,
         rviz2,
         odom_filter,
-        pointcloud2_filter
+        #pointcloud2_filter
     ])
