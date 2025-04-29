@@ -166,7 +166,7 @@
             </link>
 
             <link name='left_wheel'>
-                <pose relative_to="chassis">-1 0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis">-1 0.6 -0.33 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
                     <mass>20</mass>
                     <inertia>
@@ -202,7 +202,7 @@
             </link>
 
             <link name='right_wheel'>
-                <pose relative_to="chassis">-1 -0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis">-1 -0.6 -0.33 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
                     <mass>20</mass>
                     <inertia>
@@ -238,7 +238,7 @@
             </link>
 
             <link name='caster'>
-                <pose relative_to="chassis"> 0.7 0 -0.3 0 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis"> 0.7 0 -0.43 0 0 0</pose> <!--angles are in radian-->
                 <inertial>
                   <mass>1</mass>
                   <inertia>
@@ -253,7 +253,7 @@
                 <visual name='visual_caster'>
                   <geometry>
                     <sphere>
-                      <radius>0.2</radius>
+                      <radius>0.1</radius>
                     </sphere>
                   </geometry>
                   <material>

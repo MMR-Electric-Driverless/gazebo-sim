@@ -74,7 +74,7 @@
             
             <!--lidar frame-->
             <frame name="lidar_frame" attached_to='chassis'>
-                <pose>-0.26 0 0.475 0 -0.1570796 3.14</pose>
+                <pose>-0.26 0 0.47 0 -0.1570796 3.14</pose>
             </frame>
 
             <link name='chassis'>
@@ -89,8 +89,8 @@
                             <horizontal>
                                 <samples>500</samples>
                                 <resolution>0.1</resolution>
-                                <min_angle>2.356194</min_angle>
-                                <max_angle>3.926991</max_angle>
+                                <min_angle>1.570796</min_angle>
+                                <max_angle>4.712388</max_angle>
                             </horizontal>
                             <vertical>
                                 <samples>128</samples>
@@ -107,7 +107,7 @@
                         <noise>
                             <type>gaussian</type>
                             <mean>0.0</mean>
-                            <stddev>0.05</stddev>
+                            <stddev>0.01</stddev>
                         </noise>
                     </lidar>
                     
@@ -166,7 +166,7 @@
             </link>
 
             <link name='left_wheel'>
-                <pose relative_to="chassis">-1 0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis">-1 0.6 -0.33 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
                     <mass>20</mass>
                     <inertia>
@@ -202,7 +202,7 @@
             </link>
 
             <link name='right_wheel'>
-                <pose relative_to="chassis">-1 -0.6 -0.3 -1.5707 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis">-1 -0.6 -0.33 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
                     <mass>20</mass>
                     <inertia>
@@ -238,7 +238,7 @@
             </link>
 
             <link name='caster'>
-                <pose relative_to="chassis"> 0.7 0 -0.3 0 0 0</pose> <!--angles are in radian-->
+                <pose relative_to="chassis"> 0.7 0 -0.43 0 0 0</pose> <!--angles are in radian-->
                 <inertial>
                   <mass>1</mass>
                   <inertia>
@@ -253,7 +253,7 @@
                 <visual name='visual_caster'>
                   <geometry>
                     <sphere>
-                      <radius>0.2</radius>
+                      <radius>0.1</radius>
                     </sphere>
                   </geometry>
                   <material>
