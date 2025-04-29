@@ -14,9 +14,9 @@ lidar:
   h_min_angle: 1.570796 #2.356194   #135°
   h_max_angle: 4.712388 #3.926991   #225°
   h_resolution: 0.1
-  v_samples: 128
-  v_min_angle: -0.3926991 #-22.5°
-  v_max_angle: 0.3926991  #22.5°
+  v_samples: 320
+  v_min_angle: -0.4363323 #-25°
+  v_max_angle: 0.2617994  #15°
   v_resolution: 0.1
   min_range: 0.01
   max_range: 80.0
