@@ -68,12 +68,12 @@ class PointCloudFilter:
             params = yaml.safe_load(yaml_file)
 
         filter_params = params.get('filter', {})
-        required_keys = ['pcl_topic', 'fixed_frame']
+        required_keys = ['pcl_topic', 'pcl_frame']
         for key in required_keys:
             if key not in filter_params:
                 raise ValueError(f"Parametro '{key}' mancante nel file YAML.")
         pcl_topic = filter_params['pcl_topic']
-        self.fixed_frame = filter_params['fixed_frame']
+        self.fixed_frame = filter_params['pcl_frame']
 
         self.publisher = self.node.create_publisher(PointCloud2, pcl_topic, 1)
         

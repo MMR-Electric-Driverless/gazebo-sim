@@ -1,5 +1,6 @@
 filter:
   fixed_frame: 'track'
+  pcl_frame: 'track'
   odom_topic: '/odometry'
   imu_topic: '/imu'   # does nothing
   pcl_topic: '/points'
