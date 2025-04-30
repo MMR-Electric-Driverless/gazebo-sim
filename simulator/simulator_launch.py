@@ -55,8 +55,7 @@ def generate_launch_description():
     rviz_config_file = os.path.join(pkg_dir, '../rviz_config.rviz')  #optional
     bridge_yaml = os.path.join(pkg_dir, '../bridge.yaml')
     race_track = os.path.join(pkg_dir, '../tracks/race_track.csv')  #csv file with X and Y features
-    p_filter = os.path.join(pkg_dir, 'filter.py')
-    o_filter = os.path.join(pkg_dir, 'odom_filter.py')
+    filter = os.path.join(pkg_dir, 'filter.py')
 
     if not os.path.exists(gazebo_params_file):
         raise FileNotFoundError(f"Il file YAML dei parametri non esiste: {gazebo_params_file}")
@@ -68,7 +67,7 @@ def generate_launch_description():
     vehicle_params = params.get('vehicle',{})
     cones_params = params.get('cones',{})
     required_keys = [
-        'pose', 'linear_speed_f', 'hz', 'h_samples', 'h_min_angle', 'h_max_angle', 
+        'cmd_vel', 'pose', 'linear_speed_f', 'hz', 'h_samples', 'h_min_angle', 'h_max_angle', 
         'h_resolution', 'v_samples', 'v_min_angle', 'v_max_angle', 
         'v_resolution', 'min_range', 'max_range', 'range_resolution', 
         'noise_mean', 'noise_std', 'abs_pose', 'min_dist', 'scale', 'track_width'
@@ -135,6 +134,7 @@ def generate_launch_description():
     sdf_content = sdf_content.replace('${vehicle_abs_pose}', abs_pose)
 
     sdf_content = sdf_content.replace('${vehicle_linear_speed_f}', str(vehicle_params['linear_speed_f']))
+    sdf_content = sdf_content.replace('${cmd_vel}', str(vehicle_params['cmd_vel']))
     sdf_content = sdf_content.replace('${lidar_pose}', ' '.join(map(str, lidar_params['pose'])))
     sdf_content = sdf_content.replace('${lidar_hz}', str(lidar_params['hz']))
     sdf_content = sdf_content.replace('${lidar_h_samples}', str(lidar_params['h_samples']))
@@ -192,15 +192,11 @@ def generate_launch_description():
         output='screen'
     )
 
-    pointcloud2_filter = ExecuteProcess(
-        cmd=['python3', p_filter],
+    filter = ExecuteProcess(
+        cmd=['python3', filter],
         output='screen'
     )
 
-    odom_filter = ExecuteProcess(
-        cmd=['python3', o_filter],
-        output='screen'
-    )
     print('\n\n\n[MESSAGE]: To move the car click on the plugins dropdown list in the top right corner (vertical ellipsis), select the Key Publisher.\n\n\n')
 
     return LaunchDescription([
@@ -213,6 +209,5 @@ def generate_launch_description():
         ignition_gazebo,
         ros2_bridge,
         rviz2,
-        odom_filter,
-        #pointcloud2_filter
+        filter,
     ])

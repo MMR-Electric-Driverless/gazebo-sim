@@ -1,23 +1,22 @@
-import numpy as np
-import rclpy
+import os
 import yaml
 import time
-import os
-import struct
-from sensor_msgs.msg import PointCloud2, PointField
+import rclpy
 from rclpy.executors import MultiThreadedExecutor
+from nav_msgs.msg import Odometry
+from sensor_msgs.msg import PointCloud2
 
 
-class PointCloudFilter:
+class OdomFilter:
     def __init__(self):
-        self.node = rclpy.create_node('pointcloud_filter')
+        self.node = rclpy.create_node('odom_filter')
         self.subscriber = self.node.create_subscription(
-            PointCloud2,
-            '/lidar/points',
+            Odometry,
+            '/model/vehicle_blue/odometry',
             self.callback,
             1
         )
-        self.publisher = self.node.create_publisher(PointCloud2, '/lidar/filtered', 30)
+        
         pkg_dir = os.path.dirname(os.path.abspath(__file__))
         params_file = os.path.join(pkg_dir, '../params.yaml')
         if not os.path.exists(params_file):
@@ -27,94 +26,85 @@ class PointCloudFilter:
             params = yaml.safe_load(yaml_file)
 
         filter_params = params.get('filter', {})
-        required_keys = ['vertical_zones']
+        required_keys = ['odom_topic', 'fixed_frame']
         for key in required_keys:
             if key not in filter_params:
                 raise ValueError(f"Parametro '{key}' mancante nel file YAML.")
+        odom_topic = filter_params['odom_topic']
+        self.fixed_frame = filter_params['fixed_frame']
 
-        # Define vertical zones as list of dictionaries:
-        # Each zone has 'start' (0.0-1.0), 'end' (0.0-1.0), and 'downsample' factor (int)
-        self.vertical_zones = filter_params['vertical_zones']
+        self.publisher = self.node.create_publisher(Odometry, odom_topic, 30)
+        
 
     def callback(self, msg):
         start_time = time.time()
 
-        # Step 1: Point cloud data conversion
-        point_cloud_data_start = time.time()
-        point_cloud_data = np.frombuffer(msg.data, dtype=np.float32)
-        height, width = msg.height, msg.width
-        point_cloud_data = point_cloud_data.reshape(height, width, -1)
-        point_cloud_data_duration = time.time() - point_cloud_data_start
+        if msg.child_frame_id == "vehicle_blue/base_footprint":
+            msg.header.frame_id = self.fixed_frame  #"vehicle_blue/chassis/lidar"
+            publish_duration = time.time() - start_time
+            # create a new message for yaw
+            msg.pose.pose.position.z = 0.0
+            # Reverse the yaw in the quaternion
+            self.publisher.publish(msg)
+            # Log the times for each part
+            self.node.get_logger().info(f"Odom filter publishing duration: {publish_duration:.3}s")
 
-        # Step 2: Vertical zones filtering
-        vertical_filter_start = time.time()
-        selected_rows = []
-        for zone in self.vertical_zones:
-            start_row = int(zone['start'] * height)
-            end_row = int(zone['end'] * height)
-            end_row = min(end_row, height)
-            step = zone['downsample']
-            if step < 1:
-                step = 1
-            rows = np.arange(start_row, end_row, step)
-            selected_rows.append(rows)
-        selected_rows = np.unique(np.concatenate(selected_rows))
-        vertical_filter_duration = time.time() - vertical_filter_start
-
-        # Step 3: Data filtering
-        filter_data_start = time.time()
-        filtered_data = point_cloud_data[selected_rows, :, :]
-
-        # Step 4: Reducing accuracy to improve performance
-        filtered_data = filtered_data.astype(np.float32)
-        new_height = filtered_data.shape[0]
-        new_width = filtered_data.shape[1]
-
-        filter_data_duration = time.time() - filter_data_start
-
-        # Step 5: Publishing
-        publish_start = time.time()
-        filtered_msg = PointCloud2()
-        filtered_msg.header = msg.header
-        filtered_msg.height = new_height
-        filtered_msg.width = new_width
-        filtered_msg.fields = msg.fields.copy() if hasattr(msg, 'fields') else []
-        filtered_msg.fields.append(PointField(name='t', offset=0, datatype=PointField.FLOAT32, count=1))
-        filtered_msg.is_bigendian = msg.is_bigendian
-        filtered_msg.point_step = msg.point_step
-        filtered_msg.row_step = filtered_msg.width * filtered_msg.point_step
-        filtered_msg.is_dense = msg.is_dense
-
-        '''!!!Bottleneck Line!!!'''
-        filtered_msg.data = filtered_data.tobytes() 
-        '''!!!Bottleneck Line!!!'''
+class PointCloudFilter:
+    def __init__(self):
+        self.node = rclpy.create_node('pointcloud_filter')
+        self.subscriber = self.node.create_subscription(
+            PointCloud2,
+            '/model/points',
+            self.callback,
+            1
+        )
         
-        self.publisher.publish(filtered_msg)
-        publish_duration = time.time() - publish_start
+        pkg_dir = os.path.dirname(os.path.abspath(__file__))
+        params_file = os.path.join(pkg_dir, '../params.yaml')
+        if not os.path.exists(params_file):
+            raise FileNotFoundError(f"Il file YAML dei parametri non esiste: {params_file}")
+    
+        with open(params_file, 'r') as yaml_file:
+            params = yaml.safe_load(yaml_file)
 
+        filter_params = params.get('filter', {})
+        required_keys = ['pcl_topic', 'fixed_frame']
+        for key in required_keys:
+            if key not in filter_params:
+                raise ValueError(f"Parametro '{key}' mancante nel file YAML.")
+        pcl_topic = filter_params['pcl_topic']
+        self.fixed_frame = filter_params['fixed_frame']
 
-        total_duration = time.time() - start_time
+        self.publisher = self.node.create_publisher(PointCloud2, pcl_topic, 1)
+        
 
-        # Log the times for each part
-        self.node.get_logger().info(f"Total callback duration: {total_duration:.4f}s")
-        self.node.get_logger().info(f"PointCloud conversion: {point_cloud_data_duration:.4f}s")
-        self.node.get_logger().info(f"Vertical filter duration: {vertical_filter_duration:.4f}s")
-        self.node.get_logger().info(f"Filtering data duration: {filter_data_duration:.4f}s")
-        self.node.get_logger().info(f"Publishing duration: {publish_duration:.4f}s")
+    def callback(self, msg):
+        start_time = time.time()
 
+        msg.header.frame_id = self.fixed_frame  #"vehicle_blue/chassis/lidar"
+        publish_duration = time.time() - start_time
+        self.publisher.publish(msg)
+
+        self.node.get_logger().info(f"PCL filter publishing duration: {publish_duration:.3}s")
 
 
 def main(args=None):
     rclpy.init(args=args)
-    pointcloud_filter = PointCloudFilter()
-    executor = MultiThreadedExecutor(num_threads=8)
-    executor.add_node(pointcloud_filter.node)
+
+    odom_filter = OdomFilter()
+    pcl_filter = PointCloudFilter()
+
+    executor = MultiThreadedExecutor()
+    executor.add_node(odom_filter.node)
+    executor.add_node(pcl_filter.node)
+
     try:
         executor.spin()
     except KeyboardInterrupt:
         pass
     finally:
-        pointcloud_filter.node.destroy_node()
+        odom_filter.node.destroy_node()
+        pcl_filter.node.destroy_node()
         rclpy.shutdown()
 
 

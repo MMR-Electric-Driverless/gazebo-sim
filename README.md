@@ -69,19 +69,19 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: .5}, angular: {z: 
 The following code explains what every parameter does:
 
 ```yaml
-# LiDAR v_rays filter
+# Topic filter
 filter:
-  vertical_zones: [
-            {'start': 0.0, 'end': 0.25, 'downsample': 4},  # Upper 25% of rows, keep 1/4
-            {'start': 0.25, 'end': 0.75, 'downsample': 1},  # Middle 50%, keep all
-            {'start': 0.75, 'end': 1.0, 'downsample': 4},  # Lower 25%, keep 1/4
-        ]
-  # use [{'start': 0.0, 'end': 1.0, 'downsample': 1}] to keep all LiDAR uniform rays
+  fixed_frame: 'track'
+  odom_topic: '/odometry'
+  imu_topic: '/imu'   # does nothing
+  pcl_topic: '/points'
 
 # Vehicle parameters
 vehicle:
   abs_pose: [-2.4, 0, 0, 0, 0, -0.7]  # Absolute position and rotation
   linear_speed_f: 0.5 # Frontal car speed
+  cmd_vel: '/model/cmd_vel' # Moving input topic
+
 
 # Lidar parameters
 lidar:

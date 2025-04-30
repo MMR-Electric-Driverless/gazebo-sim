@@ -1,12 +1,12 @@
 filter:
-  vertical_zones: [
-            {'start': 0.0, 'end': 0.25, 'downsample': 4},  # Upper 25% of rows, keep 1/4
-            {'start': 0.25, 'end': 0.75, 'downsample': 1},  # Middle 50%, keep all
-            {'start': 0.75, 'end': 1.0, 'downsample': 4},  # Lower 25%, keep 1/4
-        ]
+  fixed_frame: 'track'
+  odom_topic: '/odometry'
+  imu_topic: '/imu'   # does nothing
+  pcl_topic: '/points'
 vehicle:
   abs_pose: [17.4, 12.3, 1, 0, 0, 0]  #absolute position and rotation
   linear_speed_f: 5
+  cmd_vel: '/model/cmd_vel'
 lidar:
   pose: [-0.26, 0, 0.47, 0, 0.1570796, 0.0]  #lidar position and rotation relative to the car
   hz: 20

@@ -82,7 +82,7 @@
                 <!--lidar sensor-->
                 <sensor name='lidar' type='gpu_lidar'>
                     <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
-                    <topic>lidar</topic>
+                    <topic>model</topic>
                     <update_rate>${lidar_hz}</update_rate>
                     <lidar>
                         <scan>
@@ -309,7 +309,7 @@
                 <right_joint>right_wheel_joint</right_joint>
                 <wheel_separation>1.2</wheel_separation>
                 <wheel_radius>0.2</wheel_radius>
-                <topic>/cmd_vel</topic>
+                <topic>${cmd_vel}</topic>
             </plugin>
 
             <plugin
@@ -331,7 +331,7 @@
             <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
                 <match field="data">16777235</match>
             </input>
-            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+            <output type="ignition.msgs.Twist" topic="${cmd_vel}">
                 linear: {x: ${vehicle_linear_speed_f}}, angular: {z: 0.0}
             </output>
         </plugin>
@@ -342,7 +342,7 @@
             <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
                 <match field="data">16777237</match>
             </input>
-            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+            <output type="ignition.msgs.Twist" topic="${cmd_vel}">
                 linear: {x: -0.5}, angular: {z: 0.0}
             </output>
         </plugin>
@@ -353,7 +353,7 @@
             <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
                 <match field="data">16777236</match>
             </input>
-            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+            <output type="ignition.msgs.Twist" topic="${cmd_vel}">
                 linear: {x: 0.0}, angular: {z: -0.5}
             </output>
         </plugin>
@@ -364,7 +364,7 @@
             <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
                 <match field="data">16777234</match>
             </input>
-            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+            <output type="ignition.msgs.Twist" topic="${cmd_vel}">
                 linear: {x: 0.0}, angular: {z: 0.5}
             </output>
         </plugin>
@@ -375,7 +375,7 @@
             <input type="ignition.msgs.Int32" topic="/keyboard/keypress">
                 <match field="data">65</match>
             </input>
-            <output type="ignition.msgs.Twist" topic="/cmd_vel">
+            <output type="ignition.msgs.Twist" topic="${cmd_vel}">
                 linear: {x: 0.0}, angular: {z: 0.0}
             </output>
         </plugin>
