@@ -74,7 +74,7 @@
             
             <!--lidar frame-->
             <frame name="lidar_frame" attached_to='chassis'>
-                <pose>-0.26 0 0.47 0 -0.1570796 3.14</pose>
+                <pose>-0.26 0 0.47 0 0.1570796 0.0</pose>
             </frame>
 
             <link name='chassis'>
@@ -89,8 +89,8 @@
                             <horizontal>
                                 <samples>500</samples>
                                 <resolution>0.1</resolution>
-                                <min_angle>1.570796</min_angle>
-                                <max_angle>4.712388</max_angle>
+                                <min_angle>-1.570796</min_angle>
+                                <max_angle>1.570796</max_angle>
                             </horizontal>
                             <vertical>
                                 <samples>320</samples>
@@ -315,7 +315,7 @@
             <plugin
                 filename="libignition-gazebo-odometry-publisher-system"
                 name="ignition::gazebo::systems::OdometryPublisher">
-                <rpy_offset>0 0 3.14</rpy_offset>
+                <rpy_offset>0 0 0</rpy_offset>
                 <dimensions>3</dimensions>
                 <odom_publish_frequency>20</odom_publish_frequency>
             </plugin>

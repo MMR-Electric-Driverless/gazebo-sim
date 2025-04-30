@@ -8,11 +8,11 @@ vehicle:
   abs_pose: [17.4, 12.3, 1, 0, 0, 0]  #absolute position and rotation
   linear_speed_f: 5
 lidar:
-  pose: [-0.26, 0, 0.47, 0, -0.1570796, 3.14]  #lidar position and rotation relative to the car
+  pose: [-0.26, 0, 0.47, 0, 0.1570796, 0.0]  #lidar position and rotation relative to the car
   hz: 20
   h_samples: 500
-  h_min_angle: 1.570796 #2.356194   #135°
-  h_max_angle: 4.712388 #3.926991   #225°
+  h_min_angle: -1.570796 #2.356194   #135°
+  h_max_angle: 1.570796 #3.926991   #225°
   h_resolution: 0.1
   v_samples: 320
   v_min_angle: -0.4363323 #-25°

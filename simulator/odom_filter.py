@@ -22,9 +22,12 @@ class OdomFilter:
         start_time = time.time()
 
         if msg.child_frame_id == "vehicle_blue/base_footprint":
-            self.publisher.publish(msg)
+            msg.header.frame_id = "vehicle_blue/chassis/lidar"
             publish_duration = time.time() - start_time
-
+            # create a new message for yaw
+            msg.pose.pose.position.z = 0.0
+            # Reverse the yaw in the quaternion
+            self.publisher.publish(msg)
             # Log the times for each part
             self.node.get_logger().info(f"Odom filter publishing duration: {publish_duration:.3}s")
 
