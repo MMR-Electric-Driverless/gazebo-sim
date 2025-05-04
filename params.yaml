@@ -1,12 +1,12 @@
 filter:
   fixed_frame: 'track'
-  pcl_frame: 'track'
-  odom_topic: '/odometry'
+  pcl_frame: 'vehicle_blue/chassis/lidar'
+  odom_topic: '/gazebo/odom'
   imu_topic: '/imu'   # does nothing
   pcl_topic: '/points'
 vehicle:
   abs_pose: [17.4, 12.3, 1, 0, 0, 0]  #absolute position and rotation
-  linear_speed_f: 5
+  linear_speed_f: 0.75
   cmd_vel: '/model/cmd_vel'
 lidar:
   pose: [-0.26, 0, 0.47, 0, 0.1570796, 0.0]  #lidar position and rotation relative to the car
@@ -25,6 +25,6 @@ lidar:
   noise_mean: 0.0
   noise_std: 0.01
 cones:
-  min_dist: 1.5 #minimum distance between cones
+  min_dist: 2.5 #minimum distance between cones
   scale: 10 #map coordinates scale
   track_width: 3

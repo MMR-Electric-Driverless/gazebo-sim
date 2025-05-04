@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -233,7 +233,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /odometry
+        Value: /gazebo/odom
       Value: true
     - Class: rviz_default_plugins/Axes
       Enabled: true
@@ -245,7 +245,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: track
+    Fixed Frame: vehicle_blue/chassis/lidar
     Frame Rate: 30
   Name: root
   Tools:
@@ -325,4 +325,4 @@ Window Geometry:
     collapsed: true
   Width: 1162
   X: 758
-  Y: 114
+  Y: 117
