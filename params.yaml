@@ -27,4 +27,4 @@ lidar:
 cones:
   min_dist: 2.5 #minimum distance between cones
   scale: 10 #map coordinates scale
-  track_width: 3
+  track_width: 4
