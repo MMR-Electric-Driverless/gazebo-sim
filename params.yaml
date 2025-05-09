@@ -11,7 +11,7 @@ vehicle:
 lidar:
   pose: [-0.26, 0, 0.47, 0, 0.1570796, 0.0]  #lidar position and rotation relative to the car
   hz: 20
-  h_samples: 500
+  h_samples: 900
   h_min_angle: -1.570796 #2.356194   #135°
   h_max_angle: 1.570796 #3.926991   #225°
   h_resolution: 0.1
