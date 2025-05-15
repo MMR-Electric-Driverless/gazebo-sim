@@ -29,6 +29,7 @@ if [ "$USE_CPU_CLUSTERING" == true ]; then
 fi
 tmux split-window -v -t simulation "ros2 launch mmr_ekf_odometry simulation.launch.py"
 tmux split-window -h -t simulation "ros2 launch local_planner local_planner.launch.py"
+tmux split-window -h -t simulation "ros2 launch lap_counter lap_counter.launch.py"
 
 tmux select-layout -t simulation tiled
 
