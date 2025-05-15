@@ -11,12 +11,7 @@ for arg in "$@"; do
     fi
 done
 
-# Source files from mmr-drive, orin-drive, and gazebo-sim
-if [ "$USE_CPU_CLUSTERING" == true ]; then
-    source $ROOT_DIR/mmr-drive/install/setup.sh
-else
-    source $ROOT_DIR/clustering_plane_finder_gpu/install/setup.sh
-fi
+# Source files from orin-drive and gazebo-sim
 source $ROOT_DIR/orin-drive/install/setup.sh
 source $ROOT_DIR/gazebo-sim/install/setup.sh
 source $ROOT_DIR/pcl-filter/install/setup.sh
