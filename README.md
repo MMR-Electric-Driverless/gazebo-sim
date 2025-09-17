@@ -21,20 +21,18 @@
 - **`gazebo fortress`** [[link]](https://gazebosim.org/docs/fortress/install/)
 - **`Colcon`** [[link]](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html)
 
-> this command will install both numpy and pandas systemwise, creating a virtual environment and installing them with pip is recommended.
-```commandline
-sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions python3-numpy python3-pandas -y
-```
-> for virtual environments use the following two commands instead. Remember to use pip only inside the virtual environment!
+### Venv installation
+> for virtual environments use the following two commands. Remember to use pip only inside the virtual environment!
 ```commandline
 sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions
 ```
 ```commandline
-pip install numpy pandas
+pip install numpy pandas pyyaml catkin_pkg
 ```
-> I found useful installing the following packages too
-```commandline
-pip install pyyaml catkin_pkg
+
+### Systemwide installation (not recommended)
+```
+sudo apt-get install ros-humble-ros-gz-bridge python3-colcon-common-extensions python3-numpy python3-pandas -y
 ```
 ## :gear: How to build & Run
 ```commandline
@@ -59,6 +57,9 @@ ros2 launch gazebo-sim simulator_launch.py
 ```
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: .5}, angular: {z: 0.5}}"
 ```
+
+A pcl filter is also needed to emulate real OT128 lidar structure: 
+https://github.com/MMR-Electric-Driverless/pcl-filter
 
 ![Screenshot from 2025-01-31 21-59-21](https://github.com/user-attachments/assets/343c7e04-40dd-4dab-8bff-37520b708268)
 
